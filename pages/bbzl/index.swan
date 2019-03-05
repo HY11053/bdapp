@@ -1,0 +1,50 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+   <!--图片层-->
+  <view class="home-view2">
+    <image class="home-image1" src="../images/bbzl.jpg"></image>
+  </view>
+</view>
+<view class='intro'>
+    <view class='introb'>
+     <view class='title'>本资料包含以下内容：</view>
+    <view> 
+      ACCA注册报名指南 
+    </view>
+    <view>ACCA考试规则手册</view>
+    <view>ACCA官方学习资料（包括历年真题、考试大纲、官方机考模拟题等）</view>
+    <view>高顿ACCA独家资料（包括考纲解析、内部讲义、学霸笔记、重点整理、教研资料等）
+    财经英汉词典</view> 
+</view>
+
+
+    
+</view>
+
+<view class='msg'>
+   
+    <view class='inpubox'>
+        <view class='label'>手机</view>
+        <view class='exter'><input type='text' placeholder='请输入您的手机号' value='{=phone=}' bindinput="phone"/></view>
+    </view>
+     <view class='inpubox'>
+        <view class='label'>邮箱</view>
+        <view class='exter'><input type='text' placeholder='请输入您的邮箱' value='{=email=}' bindinput="email" /></view>
+    </view>
+        <view class='inpubox'>
+        <view class='label'>图形验证码</view>
+        <image src="{{imgUrl}}?openid={{time}}" class='imgCode' bindtap='getCode'></image>
+    </view>
+        <view class='inpubox'>
+        <view class='label'>图片验证码</view>
+        <view class='exter' style="width:50%"><input type='text' value='{=picCode=}' bindinput="getpicCode" placeholder='请输入图片验证码' /></view>
+        <view class='getCode' bindtap='send'>获取验证码</view>
+    </view>
+    <view class='inpubox'>
+        <view class='label'>验证码</view>
+        <view class='exter'><input type='text' value='{=code=}' bindinput="getMycode" placeholder='请输入验证码' /></view>
+    </view>
+    <view class='msgsub' bindtap='search'>
+    提交
+    </view>
+</view>

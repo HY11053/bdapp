@@ -1,0 +1,115 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+   <!--图片层-->
+  <view class="home-view2">
+    <image class="home-image1" src="../images/xqpg.jpg"></image>
+  </view>
+</view>
+
+<view class='intro'>
+    <view class='introb'>
+    <view> 
+      ACCA资深顾问老师1对1服务。全面评估学前基础、针对个人基础掌握情况免费为你定制专属学习计划，更快通过ACCA考试。
+    </view>
+  <view> 
+      PS：ACCA资深顾问老师都会全面的了解你目前的学习状况，所以需花费时间较长。（每月仅限100名预约名额，先到先得）。
+    </view>
+</view>
+
+
+    
+</view>
+<view class='main'>
+    <view class='subtit'>目前的身份</view>
+ 
+   <view class='sbusele'>
+      <view class='{{ids==1?"active sbuseles":"sbuseles"}}' data-ids='1' data-identity='在校学生' bindtap='changeidentity'>
+          <view>在校</view>
+          <text>学生</text>
+      </view>
+     <view class='{{ids==2?"active sbuseles":"sbuseles"}}' data-ids='2' data-identity='在职人士' bindtap='changeidentity'>
+          <view>在职</view>
+          <text>人士</text>
+      </view>
+     
+    </view>
+</view>
+
+
+<view class='main'>
+    <view class='subtit'>专业</view>
+    <view class='sbusele'>
+      <view class='{{idd==1?"active sbuseles":"sbuseles"}}' data-idd='1' data-name='财经相关' catchtap='changemajor'>
+          <view>财经</view>
+          <text>相关</text>
+      </view>
+     <view class='{{idd==2?"active sbuseles":"sbuseles"}}' data-idd='2' data-name='非财经相关' catchtap='changemajor'>
+           <view>非财经</view>
+          <text>相关</text>
+      </view>
+      <view class='{{idd==3?"active sbuseles":"sbuseles"}}' data-idd='3' data-name='不确定' catchtap='changemajor'>
+          <view class='mt20'>不确定</view>
+      </view>
+   
+    </view>
+</view>
+<view class='main'>
+    <view class='subtit'>最高学历</view>
+    <view class='sbusele'>
+      <view class='{{idf==1?"active sbuseles":"sbuseles"}}' data-idf='1' data-education='高中' catchtap='changeeducation'>
+          <view class='mt20'>高中</view>
+      </view>
+     <view class='{{idf==2?"active sbuseles":"sbuseles"}}' data-idf='2' data-education='专/本科' catchtap='changeeducation'>
+          <view class='mt20'>专/本科</view>
+      </view>
+      <view class='{{idf==3?"active sbuseles":"sbuseles"}}' data-idf='3' data-education='硕士及以上' catchtap='changeeducation'>
+          <view>硕士及</view>
+          <text>以上</text>
+      </view>
+    
+    </view>
+</view>
+
+<view class='main'>
+    <view class='subtit'>英语能力</view>
+    <view class='sbusele'>
+      <view class='{{id==1?"active sbuseles":"sbuseles"}}' data-id='1' data-name='初中' catchtap='changeOil'>
+          <view class='mt20'>初中</view>
+      </view>
+     <view class='{{id==2?"active sbuseles":"sbuseles"}}' data-id='2' data-name='高中' catchtap='changeOil'>
+          <view class='mt20'>高中</view>
+      </view>
+      <view class='{{id==3?"active sbuseles":"sbuseles"}}' data-id='3' data-name='四六级' catchtap='changeOil'>
+          <view class='mt20'>四六级</view>
+      </view>
+     <view class='{{id==4?"active sbuseles":"sbuseles"}}' data-id='4' data-name='专业级' catchtap='changeOil'>
+          <view class='mt20'>专业级</view>
+      </view>
+    </view>
+</view>
+<view class='msg'>
+    <view class='inpubox'>
+        <view class='label'>姓名</view>
+        <view class='exter'><input type='text' value='{=username=}' bindinput="username" placeholder='请输入您的姓名  ' /></view>
+    </view>
+    <view class='inpubox'>
+        <view class='label'>联系电话</view>
+        <view class='exter'><input type='text' value='{=phone=}' bindinput="phone" placeholder='请输入您的手机号' /></view>
+    </view>
+    <view class='inpubox'>
+        <view class='label'>图形验证码</view>
+        <image src="{{imgUrl}}?openid={{time}}" class='imgCode' bindtap='getCode'></image>
+    </view>
+        <view class='inpubox'>
+        <view class='label'>图片验证码</view>
+        <view class='exter' style="width:50%"><input type='text' value='{=picCode=}' bindinput="getpicCode" placeholder='请输入图片验证码' /></view>
+        <view class='getCode' bindtap='send'>获取验证码</view>
+    </view>
+    <view class='inpubox'>
+        <view class='label'>验证码</view>
+        <view class='exter'><input type='text' value='{=code=}' bindinput="getMycode" placeholder='请输入验证码' /></view>
+    </view>
+    <view class='msgsub' bindtap='search'>
+    提交
+    </view>
+</view>

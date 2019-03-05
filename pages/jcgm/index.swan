@@ -1,0 +1,25 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+   <!--图片层-->
+  <view class="home-view2">
+    <image class="home-image1" src="../images/jcgm.jpg"></image>
+  </view>
+</view>
+<view class='intro'>
+    <view class='introb'>
+    <view class="wx">
+         <image class src="../images/book.png"></image>
+      </view>
+    <view> 
+    【重磅上市】全球首套ACCA双语智能教材，填补了国内ACCA教学领域尚未出现中英文版本ACCA教材的空白，也翻开了“双语+富媒体+智能”教材时代的新乐章。本教材在天猫、京东等平台均有发售,购买请上天猫、京东搜索“高顿网校官方旗舰店”购买。
+    </view>
+  <view>京东店铺链接：https://item.jd.com/25846823917.html</view>
+  <view>
+      
+  </view>
+</view>
+
+
+    
+</view>
+

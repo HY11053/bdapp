@@ -1,0 +1,196 @@
+<!--index.wxml-->
+<view class='banner'>
+  <image src='https://fapiao.gaodun.com/Public/accaimg/a_01.jpg'></image>
+</view>
+<view class='index-1'>
+  <view class='biaoti'>ACCA-国际注册会计师</view>
+  <view class='content'>
+    ACCA特许公认会计师公会成立于1904年。ACCA堪称全
+
+球权威的商业通行证，<text>财经界的MBA</text>！ACCA在全球有超
+
+过<text>7000</text>家认可雇主，其国际网络能让学员及会员得到更多
+
+的工作和晋升的机会！
+  </view>
+  <view class='list'>
+    <view class='item'><image src='https://fapiao.gaodun.com/Public/accaimg/a_04.jpg'></image>零基础可学，无学历限制</view>
+    <view class='item'><image src='https://fapiao.gaodun.com/Public/accaimg/a_04.jpg'></image>全程可得3张国际会计资质+2张海外学历</view>
+    <view class='item'><image src='https://fapiao.gaodun.com/Public/accaimg/a_04.jpg'></image>获取全球就业竞争力，认可雇主优先录用</view>
+  </view>
+</view>
+<view class='banner2'>
+  <image src='https://fapiao.gaodun.com/Public/accaimg/a_07.jpg'></image>
+</view>
+
+<view class='index-1'>
+  <view class='biaoti'>为什么ACCA那么火？</view>
+  <view class='content'>
+      智能商业时代，世界各地对财会专才<text>需求殷切</text>，现在正是
+
+    凭借ACCA开启你丰富职业生涯的大好时机。
+    <view class='hh'></view>
+    立即拿下炙手可热的ACCA资格认证，代表<text>薪资、地位与社会认可。</text>
+  </view>
+</view>
+
+<view class='index-2'>
+  <image src='https://fapiao.gaodun.com/Public/accaimg/a_10.jpg'></image>
+  <view class='biaoti2'>各地竞相延揽ACCA人才</view>
+  <swiper indicator-dots="true" circular="true" indicator-active-color="#c80000">
+    <swiper-item>
+      <view class='place'>
+        <view class='place-1'>上海</view>
+        <view class='place-2'>
+          <text>政策</text>
+          《上海金融领域“十三五”人才发展规划》
+          <view class='hr'></view>
+          <text>福利：</text>
+          上海市政府鼓励各单位创新分配激励机制，建
+立自主灵活的薪酬制度，吸引该类紧缺人才
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='place'>
+        <view class='place-1'>广州</view>
+        <view class='place-2'>
+          <text>政策</text>
+          《2017年广州市高层次金融人才目录》将ACCA人才列入2017年广州市高层次金融人才目录。
+          <text>福利：</text>
+          该类人才可申请广州市政府提供的现金和一次性安家补贴等支持，并可优先享受办理落户手续等待遇。
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='place'>
+        <view class='place-1'>深圳</view>
+        <view class='place-2'>
+          <text>政策</text>
+          深圳市罗湖区制定和实施的 “菁英计划”中，把ACCA列入B类“菁英人才”认定标准。
+          <text>福利：</text>
+          该类“菁英人才”可享受住房安居、创业支持、健康管理、研修资助、联谊交流、子女入学、父母养老等人才待遇。
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='place'>
+        <view class='place-1'>成都</view>
+        <view class='place-2'>
+          <text>政策</text>
+          《天府新区成都直管区“天府英才计划”实施办法》提到，近5年取得ACCA专业资格证书，且在直管区注册的金融机构担任高级管理职务两年以上的财会人员，可申请成为B类高级人才。
+          <text>福利：</text>
+          该B类人才可享受补贴，入户、住房安居、子女就学、医疗保健、“天府英才卡”等各项政策中所对应的服务保障。
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='place'>
+        <view class='place-1'>西安</view>
+        <view class='place-2'>
+          <text>政策</text>
+          2018年2月，西安出台《西安国家自主创新示范区聚力五八八二，实施三次创业系列政策》中，《关于加快金融业发展的若干政策（主要条款）》
+          <text>福利：</text>
+          新获得ACCA（特许公认会计师公会会员）等专业资质的金融从业人员，给予每人最高50万元的工作生活补贴。
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='place'>
+        <view class='place-1'>重庆</view>
+        <view class='place-2'>
+          <text>政策</text>
+          2017年重庆市渝北区发布《临空创新人才目录》，将ACCA列入临空经营管理B类及C类人才目录
+          <text>福利：</text>
+          ACCA人才最高可获200万元项目资金，60万元人才补贴，25万元一次性购房补贴。临空创新人才及其配偶、子女户口可随调随迁。
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+  <view class='list-2'>
+    <view class='item'>
+      <view class='item-t'>89%</view>
+      <view class='item-b'>
+        89%福布斯500强、
+        75%福布斯2000强企业
+        雇用ACCA会员和学员
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item-t'>83%</view>
+      <view class='item-b'>
+        83%财富500强企业
+        <view class='hh'></view>
+        雇用ACCA学员和会员
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item-t'>7291</view>
+      <view class='item-b'>
+        全球7291知名企业加入
+“ACCA认可雇主计划”
+      </view>
+    </view>
+    <view class='item'>
+      <view class='item-t'>54%</view>
+      <view class='item-b'>
+        54%的ACCA会员
+<view class='hh'></view>
+已获得公司奖金
+      </view>
+    </view>
+  </view>
+
+
+</view>
+
+
+<view class='index-1'>
+  <view class='biaoti'>哪些人适合学ACCA？</view>
+  <swiper indicator-dots="true" circular="true" indicator-active-color="#c80000">
+    <swiper-item>
+      <view class='what'>
+        <view class='what-1'>大学在读<text>College</text></view>
+        <image src='https://fapiao.gaodun.com/Public/accaimg/a_14.jpg'></image>
+        <view class='what-2'>
+          大一就可报考！毕业即可获得世界五百强及四大会计师事务所的优先录取！
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='what'>
+        <view class='what-1'>在职人士<text>Professionals</text></view>
+        <image src='https://fapiao.gaodun.com/Public/accaimg/a_15.jpg'></image>
+        <view class='what-2'>
+          身价倍增！打通职场任督二脉，就此升职加薪畅通无阻！
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='what'>
+        <view class='what-1'>留学生及海归<text>Returned Student</text></view>
+        <image src='https://fapiao.gaodun.com/Public/accaimg/a_16.jpg'></image>
+        <view class='what-2'>
+          不做“海待”！将留学优势发挥淋漓尽致，凭借免考资格可快速取证！
+        </view>
+      </view>
+    </swiper-item>
+    <swiper-item>
+      <view class='what'>
+        <view class='what-1'>研究生及以上学历<text>Master</text></view>
+        <image src='https://fapiao.gaodun.com/Public/accaimg/a_17.jpg'></image>
+        <view class='what-2'>
+          就是要高起点！研究生学历+ACCA资质=财经领域的职场香饽饽!
+        </view>
+      </view>
+    </swiper-item>
+  </swiper>
+</view>
+
+
+<view class='index-1'>
+  <view class='biaoti'>ACCA必备资料（2019版）</view>
+  <image src='https://fapiao.gaodun.com/Public/accaimg/a_19.jpg' class='in1'></image>
+  <image src='https://fapiao.gaodun.com/Public/accaimg/a_20.jpg' class='in2'></image>
+</view>
+<button class='lq' bindtap="tz_kf">资料领取</button>

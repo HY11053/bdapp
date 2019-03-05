@@ -1,0 +1,54 @@
+page{
+  background: #f3f3f5
+}
+.tealist{
+  width: 94%;
+  margin:0 auto;
+  overflow: hidden
+}
+.teaboxs{
+  width: 50%;
+  float: left;
+  border-radius:5px;
+  height: 360rpx; 
+  overflow: hidden;
+  margin-top: 20rpx 
+
+}
+.teabox{
+  width: 90%;
+  background: #fff;
+  border-radius:5px;
+  height: 360rpx; 
+  margin: 0 auto
+
+}
+.teabg{
+  width: 100%;
+  height: 163rpx;
+}
+.teabg image{
+  width: 100%;
+  height: 163rpx;
+}
+.tx {
+  text-align: center;
+  margin-top: -40rpx;
+}
+.tx image{
+  width: 80rpx;
+  height: 80rpx;
+}
+.name{
+  text-align: center;
+  font-size: 24rpx;
+  color: #666;
+  padding: 10rpx 0
+  
+}
+.kcname{
+  font-size: 28rpx;
+  color:#000;
+  text-align: center;
+ 
+}

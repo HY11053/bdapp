@@ -1,0 +1,24 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+   <!--图片层-->
+  <view class="home-view2">
+    <image class="home-image1" src="../images/jqxx.jpg"></image>
+  </view>
+</view>
+<view class='intro'>
+    <view class='introb'>
+    <view> 
+欢迎添加ACCA学姐的个人微信ACCAmengyue,并且进入我们的全球学习社群，小姐姐可萌可撩可吐槽，还能帮你解答学习生活中的各类疑难杂症，更有不定期的社群活动送出教材、公仔、御守、笔记本、电子设备等小礼物，感恩回馈每一位考友。
+    </view>
+   
+  
+</view>
+
+
+    
+</view>
+
+
+   <view class="wx">
+    <image class src="../images/1.png"></image>
+  </view>

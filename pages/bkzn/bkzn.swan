@@ -1,0 +1,68 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+   <!--图片层-->
+  <view class="home-view2">
+    <image class="home-image1" src="../images/bkzn.jpg"></image>
+  </view>
+ 
+  
+</view>
+<view class='intro'>
+    <view class='introt'>
+      <view class='introt1 zn1'><image src='../images/zn1.png' mode="widthFix"></image></view>
+      <view class='introt2'>ACCA简介</view>
+      
+    </view>
+    <view class='introb'>
+    <view> ACCA在国内被称为国际注册会计师，是全球权威的财会金融领域的证书之一，更是国际认可范围高的财务人员资格证书。</view>
+   <text>ACCA自1988年进入中国以来，经历20余年快速发展，目前在中国拥有超过23000名会员（大陆只有6000名，大部分在香港）及48000名学员，并在北京、上海、成都、广州、深圳、香港以及澳门设有共7个办事处。</text>
+    </view>
+
+</view>
+<view class='intro'>
+    <view class='introt'>
+      <view class='introt1 zn1'><image src='../images/zn1.png' mode="widthFix"></image></view>
+      <view class='introt2'>报考条件</view>
+      
+    </view>
+    <view class='introb'>
+    <view>报考条件没有太多限制，通常在校大学生就可以注册报名参加考试了，某些专业背景还可享受一定的免试。</view>
+   
+    </view>
+
+</view>
+<view class='intro'>
+    <view class='introt'>
+      <view class='introt1 zn1'><image src='../images/zn2.png' mode="widthFix"></image></view>
+      <view class='introt2'>考试时间</view>
+      
+    </view>
+    <view class='introb'>
+   <text>ACCA每年有4个笔试考试窗口（3、6、9、12月），更有时间灵活的计算机考试。考试报名越早，就越早通过，考试费用也越少。</text>
+    </view>
+
+</view>
+<view class='intro'>
+    <view class='introt'>
+      <view class='introt1 zn1'><image src='../images/zn1.png' mode="widthFix"></image></view>
+      <view class='introt2'>考试科目</view>
+      
+    </view>
+    <view class='introb'>
+    <view>ACCA考试总共有13个科目，其课程的广度和深度完美地体现了一个财务专家所需要的商业知识储备。</view>
+   
+    </view>
+
+</view>
+<view class='intro intro_btm'>
+    <view class='introt'>
+      <view class='introt1 zn1'><image src='../images/zn1.png' mode="widthFix"></image></view>
+      <view class='introt2'>考试地点</view>
+      
+    </view>
+    <view class='introb'>
+    <view>ACCA在全国多个主要城市和地区都开设有ACCA考点。</view>
+   
+    </view>
+
+</view>

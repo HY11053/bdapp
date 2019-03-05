@@ -1,0 +1,60 @@
+<view class='tealist'>
+
+  <view class='teaboxs' bindtap="sean">
+  <view class='teabox'>
+      <view class='teabg'><image src='../images/tae_banner.png'></image></view>
+      <view class='tx'>
+        <image src='../images/sean.png'></image>
+      </view>
+      <view class='name'>Sean老师</view>
+      <view class='kcname'>Accountant in Business</view>
+  </view>
+ </view>
+
+ <view class='teaboxs' bindtap="dora">
+  <view class='teabox'>
+      <view class='teabg'><image src='../images/tae_banner.png'></image></view>
+      <view class='tx'>
+        <image src='../images/dora.png'></image>
+      </view>
+      <view class='name'>Dora老师</view>
+      <view class='kcname'>Management Accounting (MA)</view>
+  </view>
+ </view>
+
+<view class='teaboxs' bindtap="mike">
+  <view class='teabox'>
+      <view class='teabg'><image src='../images/tae_banner.png'></image></view>
+      <view class='tx'>
+        <image src='../images/mike.png'></image>
+      </view>
+      <view class='name'>Mike老师</view>
+      <view class='kcname'>Financial Management (FM)</view>
+  </view>
+ </view>
+
+
+ <view class='teaboxs' bindtap="sdanvi">
+  <view class='teabox'>
+      <view class='teabg'><image src='../images/tae_banner.png'></image></view>
+      <view class='tx'>
+        <image src='../images/sdanvi.png'></image>
+      </view>
+      <view class='name'>Sdanvi老师</view>
+      <view class='kcname'>Taxation (TX) </view>
+  </view>
+ </view>
+
+  <view class='teaboxs' bindtap="michelle">
+  <view class='teabox'>
+      <view class='teabg'><image src='../images/tae_banner.png'></image></view>
+      <view class='tx'>
+        <image src='../images/michelle.png'></image>
+      </view>
+      <view class='name'>Michelle老师
+      <view class='kcname'>Financial Accounting (FA)</view>
+  </view>
+  </view>
+
+</view>
+</view>

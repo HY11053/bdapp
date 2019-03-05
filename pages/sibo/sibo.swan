@@ -1,0 +1,64 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+   <!--图片层-->
+  <view class="home-view2">
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_01.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_02.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_03.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_04.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_05.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_06.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_07.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_08.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_09.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_10.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_11.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_12.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_13.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_14.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_15.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_16.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_17.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_18.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_19.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_20.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_21.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_22.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_23.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_24.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_25.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_26.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_27.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_28.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_29.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_30.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_31.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_32.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_33.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_34.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_35.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_36.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_37.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_38.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_39.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_40.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_41.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_42.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_43.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_44.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_45.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_46.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_47.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_48.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_49.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/sibo_50.jpg" mode="widthFix"></image>    
+  </view>
+  <view class="right_tel">
+  <button class="tel" bindtap='tel'><image class="home-image1" src="../images/tel.png"></image> </button>
+  </view>
+  <view class="bottom_tel">
+  <button class="tel" bindtap='tel'>咨询电话：400-600-8011</button>
+  </view>
+ 
+  
+</view>

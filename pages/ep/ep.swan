@@ -1,0 +1,64 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+   <!--图片层-->
+  <view class="home-view2">
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_1.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_2.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_3.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_4.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_5.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_6.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_7.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_8.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_9.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_10.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_11.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_12.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_13.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_14.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_15.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_16.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_17.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_18.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_19.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_20.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_21.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_22.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_23.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_24.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_25.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_26.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_27.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_28.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_29.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_30.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_31.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_32.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_33.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_34.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_35.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_36.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_37.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_38.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_39.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_40.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_41.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_42.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_43.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_44.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_45.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_46.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_47.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_48.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_49.jpg" mode="widthFix"></image>    
+    <image class="home-image1" src="https://fapiao.gaodun.com/Public/accaimg/ep_50.jpg" mode="widthFix"></image>    
+  </view>
+  <view class="right_tel">
+  <button class="tel" bindtap='tel'><image class="home-image1" src="../images/tel.png"></image> </button>
+  </view>
+  <view class="bottom_tel">
+  <button class="tel" bindtap='tel'>咨询电话：400-600-8011</button>
+  </view>
+ 
+  
+</view>

@@ -1,0 +1,75 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+	<!--图片层-->
+	<view class="home-view2">
+		<image class="home-image1" src="../images/mkcx.jpg"></image>
+	</view>
+</view>
+
+<view class='intro'>
+	<view class='introb'>
+		<view>
+			部分财务相关专业大学在校或毕业学生，参加ACCA考试注册时，将获得一定科目的免试权。
+		</view>
+
+	</view>
+</view>
+
+
+
+<view class='main'>
+	<view class='subtit'>专业</view>
+	<view class='sbusele'>
+		<view class='{{idd==1?"active sbuseles":"sbuseles"}}' data-idd='1' data-name='财经相关' catchtap='changemajor'>
+			<view>财经</view>
+			<text>相关</text>
+		</view>
+		<view class='{{idd==2?"active sbuseles":"sbuseles"}}' data-idd='2' data-name='非财经相关' catchtap='changemajor'>
+			<view>非财经</view>
+			<text>相关</text>
+		</view>
+		<view class='{{idd==3?"active sbuseles":"sbuseles"}}' data-idd='3' data-name='不确定' catchtap='changemajor'>
+			<view class='mt20'>不确定</view>
+		</view>
+
+	</view>
+</view>
+<view class='msg'>
+	<view class='inpubox'>
+		<view class='label'>姓名</view>
+		<view class='exter'><input type='text' value='{=username=}' bindinput="username" placeholder='请输入您的姓名  ' /></view>
+	</view>
+	<view class='inpubox'>
+		<view class='label'>联系电话</view>
+		<view class='exter'><input type='text' value='{=phone=}' bindinput="phone" placeholder='请输入您的手机号' /></view>
+	</view>
+	<view class='inpubox'>
+        <view class='label'>图形验证码</view>
+        <image src="{{imgUrl}}?openid={{time}}" class='imgCode' bindtap='getCode'></image>
+    </view>
+        <view class='inpubox'>
+        <view class='label'>图片验证码</view>
+        <view class='exter' style="width:50%"><input type='text' value='{=picCode=}' bindinput="getpicCode" placeholder='请输入图片验证码' /></view>
+        <view class='getCode' bindtap='send'>获取验证码</view>
+    </view>
+    <view class='inpubox'>
+        <view class='label'>验证码</view>
+        <view class='exter'><input type='text' value='{=code=}' bindinput="getMycode" placeholder='请输入验证码' /></view>
+    </view>
+	<view class='inpubox'>
+		<view class='label'>院校</view>
+		<view class='exter'><input type='text' value='{=school=}' bindinput="school" placeholder='请输入您的院校' /></view>
+	</view>
+	<view class='inpubox'>
+		<view class='label'>是否毕业</view>
+		<view class='exter'>
+			<!--设置监听器，当点击radio时调用-->
+			<radio-group bindchange="listenerRadioGroup" class="radio-group">
+				<radio class="radio" s-for="item, index in array" value="{{item.name}}" checked="{{item.checked}}">&nbsp;&nbsp;{{item.value}}</radio>
+			</radio-group>
+		</view>
+	</view>
+	<view class='msgsub' bindtap='search'>
+		提交
+	</view>
+</view>

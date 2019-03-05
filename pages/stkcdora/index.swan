@@ -1,0 +1,10 @@
+<!--pages/address/address.wxml-->
+<view class='bod'>
+	<!--图片层-->
+	<view class="home-view2">
+		<image class="home-image1" src="../images/kcst.jpg"></image>
+	</view>
+</view>
+<view class>
+	<video src="http://video1-cdn.gaodun.com/pub/285g7M88320KzUE0/LD.mp4" autoplay binderror="videoErrorCallback"></video>
+</view>

@@ -1,0 +1,102 @@
+page{
+  background:#f3f3f5;
+}
+.home-view2 image{
+  width: 100%;
+  height: 340rpx;
+}
+.intro{
+  margin-top: 0;
+  background:#fff;
+  width:100%;
+}
+.title{
+margin-bottom:20rpx; 
+}
+.wx {
+  text-align: center;
+  margin: 10px auto;
+}
+.wx image{
+  width: 213rpx;
+  height:213rpx;
+}
+
+.introb{
+  background:#fff;
+  width:90%;
+margin:0rpx auto;
+padding: 22rpx 22rpx 40rpx 22rpx;
+font-size: 26rpx;
+color:#333;
+line-height:40rpx;
+
+
+
+}
+.introt1{
+  float: left;
+  width: 20%;
+  
+}
+.zn1 image{
+  width: 60rpx;
+  height: 76rpx;
+  vertical-align: middle;
+  margin-left: 40rpx;
+}
+.introt2{
+  float: left;
+  width: 60%;
+  font-size: 36rpx;
+  color: #333;
+  line-height: 78rpx;
+}
+.introt3{
+  float: left;
+  width: 20%;
+  text-align: right;
+}
+.introt3 image{
+  width: 50rpx;
+  height: 32rpx;
+  vertical-align: middle;
+  margin-right: 40rpx;
+}
+.msg{
+  width: 90%;
+  margin: 40px auto;
+  border-radius: 5px;
+  background: #fff;
+  padding: 20rpx 10rpx 40rpx;
+}
+.inpubox{
+ overflow:hidden;
+border-bottom:1px solid #f3f3f5;
+width:95%;
+margin:5rpx auto;
+padding:5px;
+
+}
+.msgsub{
+  width: 95%;
+  margin: 0 auto;
+  background: #e51c2c;
+  color: #fff;
+  font-size: 36rpx;
+  border-radius: 5px;
+  text-align: center;
+  height: 90rpx;
+  line-height: 90rpx;
+  margin-top: 40rpx;
+}
+.label{
+  width: 20%;
+  float: left;
+  font-size: 30rpx;
+}
+.exter{
+  width: 80%;
+  float: left;
+  font-size: 26rpx;
+}

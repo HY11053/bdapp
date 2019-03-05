@@ -1,0 +1,71 @@
+<!--index.wxml-->
+<view class="main">
+    <!-- <swiper class="swiper" indicator-dots="true" autoplay="true" interval="5000" duration="1000">  
+      <block wx:for="{{movies}}" wx:for-index="index">  
+        <swiper-item style="text-align:center">  
+        <image src="{{item.url}}" class="slide-image" mode=""  bindtap = "previewImage"/>  
+        </swiper-item>  
+      </block>  
+      </swiper> -->
+      <view class='baner'><image style='margin-top：20rpx' src='../images/banner1.jpg' mode="widthFix"></image></view>
+</view>
+<view class='main'>
+    <view class='btit'>新手区</view>
+    <view class='navbox'>
+        <view class='navt'>
+            <view class='iconnav bot' bindtap="xqkp">
+              <view class='iconimg'>  <image src='../images/icon1.png'></image></view>
+              <view class='navname '>学前评估</view>
+            </view>
+            <view class='iconnav bot' bindtap="mkcx">
+              <view class='iconimg'>  <image src='../images/icon2.png'></image></view>
+              <view class='navname2'>免试查询</view>
+            </view>
+            <view class='iconnav' bindtap="bkzn">
+              <view class='iconimg'>  <image src='../images/icon3.png'></image></view>
+              <view class='navname'>报考指南</view>
+            </view>
+          <view class='iconnav' bindtap="dlbm">
+               <view class='iconimg'>  <image src='../images/icon4.png'></image></view>
+              <view class='navname2'>代理报名</view>
+             </view>
+        </view>
+    </view>
+</view>
+<view class='main'>
+    <view class='btit'>考生区</view>
+    <view class='navbox'>
+        <view class='navt'>
+            <button class='iconnav dl' open-type="getPhoneNumber" bindgetphonenumber="getPhoneNumber2">
+              <view class='iconimg'>  <image src='../images/icon5.png'></image></view>
+              <view class='navname pg'>必备资料</view>
+             </button>
+            <view class='iconnav bot' bindtap='stkc'>
+              <view class='iconimg'>  <image src='../images/icon6.png'></image></view>
+              <view class='navname2'>课程试听</view>
+            </view>
+            <view class='iconnav' bindtap='jqxx'>
+              <view class='iconimg'>  <image src='../images/icon7.png'></image></view>
+              <view class='navname'>进群学习</view>
+            </view>
+            <view class='iconnav' bindtap='jcgm'>
+              <view class='iconimg'>  <image src='../images/icon8.png'></image></view>
+              <view class='navname2'>教材购买</view>
+            </view>
+        </view>
+    </view>
+</view>
+<view class='main searpro' bindtap='appid_tz'>
+    <image src='../images/searchproblem.png'></image>
+</view>
+<view class='main searpro'>
+    <view class='btit'>高顿ACCA优选课程</view>
+    
+     <view class='kc kc_c' bindtap="sibo">
+    <image src='../images/kc2.jpg' mode="widthFix"></image>
+    </view>
+    <view class='ep kc_c' bindtap="zhineng">
+    <image src='../images/ep.jpg' mode="widthFix"></image>
+    </view>
+    
+</view>
