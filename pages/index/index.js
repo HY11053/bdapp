@@ -6,7 +6,14 @@ Page({
     selected: true,
     selected1: false,
     sessionKey: '',
-    movies: [{ url: '../images/banner.png' }, { url: '../images/banner1.jpg' }]
+    //movies: [{ url: '../images/banner.png' }, { url: '../images/banner1.jpg' }]
+    imgs: [
+      "https://m.51xxsp.com/51xxsp/images/133113481.jpg",
+      "https://m.51xxsp.com/51xxsp/images/133113481232.jpg",
+      "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
+      "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
+      "https://m.51xxsp.com/51xxsp/images/1331134813.jpg"
+    ]
   },
   selected: function (e) {
     this.setData({
@@ -39,9 +46,28 @@ Page({
     console.log(e.detail.errMsg);
     console.log(e.detail.iv);
     console.log(e.detail.encryptedData);
+    swan.request({
+      url: 'https://smartprogram.baidu.com/xxx', // 仅为示例，并非真实的接口地址
+      method: 'GET',
+      dataType: 'json',
+      data: {
+        key: 'value'
+      },
+      header: {
+        'content-type': 'application/json' // 默认值
+      },
+      success: function (res) {
+        console.log(res.data);
+      },
+      fail: function (err) {
+        console.log('错误码：' + err.errCode);
+        console.log('错误信息：' + err.errMsg);
+      }
+    });
     swan.navigateTo({
                         url: '../bbzl/index'
                       });
+
     // swan.login({
     //   success: res => {
     //     console.log(res.code);

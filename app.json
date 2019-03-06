@@ -25,6 +25,7 @@
         "navigationBarBackgroundColor": "#ffffff",
         "navigationBarTextStyle": "black",
         "navigationBarTitleText": "51加盟网",
+        "navigationStyle": "custom",
         "backgroundTextStyle": "light"
     },
     "networkTimeout": {
