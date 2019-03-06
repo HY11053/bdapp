@@ -1,5 +1,8 @@
 .top-banner{width: 100%; background: #dc0011; height: 150rpx; margin-bottom: 10rpx;}
 .inline-black{display: inline-block;}
 .top_logo image{width: 88rpx; height: 88rpx; border-radius: 50%; margin-top: 44rpx; margin-left: 20rpx; display: inline-block;}
-.top_title{font-size: 35rpx; font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "SimHei", "SimSun", Arial, sans-serif; color: #ffffff; font-weight: bold; position: absolute; left: 40%; top: 75rpx; }
+.top_title{font-size: 36rpx; font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "SimHei", "SimSun", Arial, sans-serif; color: #ffffff; font-weight: bold; position: absolute; left: 40%; top: 75rpx; }
+.search{ padding: 5rpx 10rpx 10rpx 10rpx;}
+.search input{background: #DDD;  border-radius: 20rpx; font-size:30rpx; padding: 10rpx;  }
+.search input::placeholder{font-size:10rpx;  color: #323232}
 .slide-image{width: 100%;}
