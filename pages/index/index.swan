@@ -25,44 +25,28 @@
 <view class="nav-side">
     <view class="smalllist clearfix">
         <view class="small-box">
-            <a href="/index.php/blist/all/">
-                <img src="/m51xxsp/images/zhaoshang.png"><span>品牌招商</span>
-            </a>
+            <image src="../../images/zhaoshang.png"></image><view>品牌招商</view>
         </view>
         <view class="small-box">
-            <a href="/index.php/nlist/1/" class="rightbox">
-                <img src="/m51xxsp/images/zhinan.png"><span>加盟指南</span>
-            </a>
+            <image src="../../images/zhinan.png"></image><view>加盟指南</view>
         </view>
         <view class="small-box">
-            <a href="/index.php/nlist/2/">
-                <img src="/m51xxsp/images/touzi.png"><span>投资分析</span>
-            </a>
+            <image src="../../images/touzi.png"></image><view>投资分析</view>
         </view>
         <view class="small-box rightbox">
-            <a href="/index.php/nlist/4/" class="rightbox">
-                <image src="/m51xxsp/images/jingying.png"></image><span>经营管理</span>
-            </a>
+                <image src="../../images/jingying.png"></image><view>经营管理</view>
         </view>
         <view class="small-box rightbox">
-            <a href="/index.php/bnlist/" class="rightbox">
-                <image src="/m51xxsp/images/xinwen.png"></image><span>品牌新闻</span>
-            </a>
+                <image src="../../images/xinwen.png"></image><view>品牌新闻</view>
         </view>
         <view class="small-box rightbox">
-            <a href="/index.php/paihangbang/" class="rightbox">
-                <image src="/m51xxsp/images/paihang.png"></image><span>排行榜</span>
-            </a>
+                <image src="../../images/paihang.png"></image><view>排行榜</view>
         </view>
         <view class="small-box rightbox">
-            <a href="/index.php/blist/canyin_28/" class="rightbox">
-                <image src="/m51xxsp/images/canyin.png"></image><span>餐饮加盟</span>
-            </a>
+                <image src="../../images/canyin.png"></image><view>餐饮加盟</view>
         </view>
         <view class="small-box rightbox">
-            <a href="/index.php/huoguo/" class="rightbox">
-                <img src="/m51xxsp/images/huoguo.png"><span>火锅加盟</span>
-            </a>
+            <image src="../../images/huoguo.png"></image><view>火锅加盟</view>
         </view>
     </view>
 </view>

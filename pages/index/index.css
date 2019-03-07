@@ -6,3 +6,5 @@
 .search input{background: #DDD;  border-radius: 20rpx; font-size:30rpx; padding: 10rpx;  }
 .search input::placeholder{font-size:10rpx;  color: #323232}
 .slide-image{width: 100%;}
+.small-box{width: 20%; float: left;}
+.small-box image{    min-width: 0.8rem;max-width: 0.8rem;display: inline-block;}
