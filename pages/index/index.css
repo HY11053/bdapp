@@ -1,13 +1,11 @@
 text{font-family: "Microsoft YaHei";}
 .clear{clear: both;}
-.top-banner{width: 100%; background: #dc0011; height: 150rpx; margin-bottom: 10rpx;}
 .inline-black{display: inline-block;}
-.top_logo image{width: 88rpx; height: 88rpx; border-radius: 50%; margin-top: 44rpx; margin-left: 20rpx; display: inline-block;}
-.top_title{font-size: 36rpx; font-family: "Microsoft YaHei", "STHeiti", "Heiti SC", "SimHei", "SimSun", Arial, sans-serif; color: #ffffff; font-weight: bold; position: absolute; left: 40%; top: 75rpx; }
 .search{ padding: 5rpx 10rpx 10rpx 10rpx;}
-.search input{background: #DDD;  border-radius: 20rpx; font-size:30rpx; padding: 10rpx;  }
-.search input::placeholder{font-size:10rpx;  color: #323232}
-.slide-image{width: 100%; height: 400rpx;}
+.btn-area .search_input{background: url("../../images/search.png") 12rpx  no-repeat #DDD  ;  border-radius: 20rpx;  padding: 10rpx; }
+.search input{ margin-left: 50rpx; background: #DDD; font-size:24rpx; line-height: 30rpx;   padding: 5rpx;}
+swiper{height: 408rpx;}
+.slide-image{width: 100%;height: 408rpx;}
 .nav-side{clear: both;}
 .small-box{width: 19%; float: left; display: flex; flex-direction: column; align-items: center; margin-left: 1%; text-align: center; font-size:24rpx; margin-top: 30rpx;}
 .small-box image{width: 100rpx;height: 100rpx; }
@@ -173,6 +171,11 @@ overflow: hidden;
     padding: 0 0.3rem;
     overflow: hidden;
     margin-top: 0.4rem;
+}
+.favor-header-bar view view.on {
+    color: #dc0011;
+    border-bottom: 2px solid #dc0011;
+    border-radius: 2px;
 }
 .favor-header-bar view .tab-inlne {
     color: #666;

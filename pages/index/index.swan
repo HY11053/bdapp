@@ -1,17 +1,9 @@
-<!--
-<view class="top-banner">
-	<view class="top_logo inline-block">
-		<image src="../../images/nav-logo2.png"></image>
-	</view>
-	<view class="inline-block">
-		<text class="top_title">51加盟网</text>
-	</view>
-</view>
--->
 <view class="search">
     <form bindsubmit="formSubmitHandle" bindreset="formReset" report-submit>
         <view class="btn-area">
-            <input name="input" placeholder="请输入要搜索的项目" />
+            <view class="search_input">
+                <input name="input"  placeholder="请输入要搜索的项目" />
+            </view>
         </view>
     </form>
 </view>
@@ -26,41 +18,41 @@
 </view>
 <view class="nav-side">
     <view class="smalllist clearfix">
-        <view class="small-box">
-            <image src="../../images/zhaoshang.png"></image><view>品牌招商</view>
+        <view class="small-box" bindtap="blists">
+            <image src="https://m.51xxsp.com/m51xxsp/images/zhaoshang.png"></image><view>品牌招商</view>
         </view>
-        <view class="small-box">
-            <image src="../../images/zhinan.png"></image><view>加盟指南</view>
+        <view class="small-box" bindtap="nlists">
+            <image src="https://m.51xxsp.com/m51xxsp/images/zhinan.png"></image><view>加盟指南</view>
         </view>
-        <view class="small-box">
-            <image src="../../images/touzi.png"></image><view>投资分析</view>
-        </view>
-        <view class="small-box rightbox">
-                <image src="../../images/jingying.png"></image><view>经营管理</view>
+        <view class="small-box"  bindtap="news">
+            <image src="https://m.51xxsp.com/m51xxsp/images/touzi.png"></image><view>投资分析</view>
         </view>
         <view class="small-box rightbox">
-                <image src="../../images/xinwen.png"></image><view>品牌新闻</view>
+                <image src="https://m.51xxsp.com/m51xxsp/images/jingying.png"></image><view>经营管理</view>
         </view>
         <view class="small-box rightbox">
-                <image src="../../images/paihang.png"></image><view>排行榜</view>
+                <image src="https://m.51xxsp.com/m51xxsp/images/xinwen.png"></image><view>品牌新闻</view>
         </view>
         <view class="small-box rightbox">
-                <image src="../../images/canyin.png"></image><view>餐饮加盟</view>
+                <image src="https://m.51xxsp.com/m51xxsp/images/paihang.png"></image><view>排行榜</view>
         </view>
         <view class="small-box rightbox">
-            <image src="../../images/huoguo.png"></image><view>火锅加盟</view>
+                <image src="https://m.51xxsp.com/m51xxsp/images/canyin.png"></image><view>餐饮加盟</view>
         </view>
         <view class="small-box rightbox">
-            <image src="../../images/huoguo.png"></image><view>火锅加盟</view>
+            <image src="https://m.51xxsp.com/m51xxsp/images/huoguo.png"></image><view>火锅加盟</view>
         </view>
         <view class="small-box rightbox">
-            <image src="../../images/huoguo.png"></image><view>火锅加盟</view>
+            <image src="https://m.51xxsp.com/m51xxsp/images/huoguo.png"></image><view>火锅加盟</view>
+        </view>
+        <view class="small-box rightbox">
+            <image src="https://m.51xxsp.com/m51xxsp/images/huoguo.png"></image><view>火锅加盟</view>
         </view>
         <view class="clear"></view>
     </view>
 </view>
 <view class="recommend clearfix">
-<image src="../../images/icon-kmtt.png"></image>
+<image src="https://m.51xxsp.com/m51xxsp/images/icon-kmtt.png"></image>
     <swiper vertical="true" autoplay="true" interval="3000" duration="500" id="moocBox">
         <block>
             <swiper-item><view>姥妈麻辣烫加盟 加盟费 招商代理条件 电话</view></swiper-item>

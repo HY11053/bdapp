@@ -21,6 +21,24 @@ Page({
       selected: true
     });
   },
+  //品牌列表
+  blists:function(){
+    swan.navigateTo({
+      url: '/pages/blists/blists'
+    });
+  },
+  //文档列表
+  nlists:function(){
+    swan.navigateTo({
+      url: '/pages/nlists/nlists'
+    });
+  },
+  //文档详情
+  news:function(){
+    swan.navigateTo({
+      url: '/pages/news/news'
+    });
+  },
   /**代理报名 */
   dlbm: function () {
 

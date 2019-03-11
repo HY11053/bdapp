@@ -1,0 +1,379 @@
+<view class="container">
+    <view class="weizhi">
+        <view><text href="/">首页</text>&nbsp;&gt;&nbsp; <text href="https://m.51xxsp.com/index.php/blist/all/">品牌招商</text>&nbsp;&gt;&nbsp;列表：</view>
+    </view>
+<!--品牌列表-->
+    <view class="brand_list">
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                  <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                                <view>
+                                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                                </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                  <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                                <view>
+                                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                                </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+        <view class="brand-detail-list-all">
+            <view class="search-list-container  ">
+                <view class="title flex flex-align-center">
+                    <text class="num-icon">
+                        <text class="top">1</text>
+                    </text>
+                    <view class="title-text">
+                        <text class="a-target" href="https://m.51xxsp.com/index.php/brand/7760/"><text>一品香猪蹄</text></text>
+                    </view>
+                    <view href="https://m.51xxsp.com/index.php/brand/7760/" class="brand-list-item-jump-tmall official" title="一品香猪蹄" data-bde-bind="1"><text class="active">品牌详情</text></view>
+                </view>
+                <view class="clear"></view>
+                <view class="brand-container" href="https://m.51xxsp.com/index.php/brand/7760/">
+                    <view class="list flex flex-align-center">
+                        <view class="dt flex flex-align-center">
+                            <view>
+                                <image src="https://m.51xxsp.com/storage/uploads/2019/03/11/d316645085572cbb73fc0fe8a4e16806.jpg" alt="一品香猪蹄" class="autoWH"></image>
+                            </view>
+                        </view>
+                        <view class="big-data">
+                            <view class="data">
+                                <view class="info"><text>投资金额：3万-10万 </text><text>品牌名称：一品香猪</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                            <view class="data">
+                                <view class="info"><text>加盟人气：256</text>  <text>所在地区：北京</text></view>
+                            </view>
+                        </view>
+                    </view>
+                    <view class="spe-msg">
+                        在创业市场上，商家没有足够的经验和资金，就需要一个实力过硬的品牌做后盾，才能更好适应竞争激烈的市场。加盟一品香猪蹄，商家可在总部的全面支持和培训下，轻松应对一切风险和阻碍。这么好的
+                    </view>
+                </view>
+            </view>
+        </view>
+
+    </view>
+</view>

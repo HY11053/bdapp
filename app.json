@@ -1,7 +1,9 @@
 {
     "debug": true,
     "pages": [
+        "pages/blists/blists",
         "pages/index/index",
+        "pages/nlists/nlists",
         "pages/detail/detail",
         "pages/bbzl/index",
         "pages/dlbm/index",
@@ -19,7 +21,11 @@
         "pages/bkzn/bkzn",
         "pages/ep/ep",
         "pages/accazs/index",
-        "pages/kf/index"
+        "pages/kf/index",
+        "pages/blists/blists",
+        "pages/blists/blists",
+        "pages/nlists/nlists",
+        "pages/news/news"
     ],
     "window": {
         "navigationBarBackgroundColor": "#dc0011",
@@ -28,10 +34,32 @@
         "navigationStyle": "default",
         "backgroundTextStyle": "light"
     },
-    "networkTimeout": {
-        "request": 30000,
-        "connectSocket": 10000,
-        "uploadFile": 10000,
-        "downloadFile": 10000
+    "tabBar": {
+        "list": [
+            {
+                "pagePath": "pages/index/index",
+                "iconPath": "images/home.png",
+                "selectedIconPath": "images/home-cur.png",
+                "text": "首页"
+            },
+            {
+                "pagePath": "pages/detail/detail",
+                "iconPath": "images/brand.png",
+                "selectedIconPath": "images/brand-cur.png",
+                "text": "品牌"
+            },
+            {
+                "pagePath": "pages/detail/detail",
+                "iconPath": "images/paihang1.png",
+                "selectedIconPath": "images/paihang-cur.png",
+                "text": "排行榜"
+            },
+            {
+                "pagePath": "pages/detail/detail",
+                "iconPath": "images/zixun.png",
+                "selectedIconPath": "images/zixun-cur.png",
+                "text": "资讯"
+            }
+        ]
     }
 }
