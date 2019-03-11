@@ -73,7 +73,7 @@
 <view class="related-tit tabs-tit">
     <text class="xptj"></text>
     <view class="btn-one-more fr">
-        <span class="ic-one-more"></span>换一批
+        <text class="ic-one-more"></text>换一批
     </view>
 </view>
 <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
@@ -121,7 +121,7 @@
     <view class="related-tit tabs-tit">
         <text class="jpxm"></text>
         <view class="btn-one-more fr">
-            <span class="ic-one-more"></span>换一批
+            <text class="ic-one-more"></text>换一批
         </view>
     </view>
     <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
@@ -245,7 +245,7 @@
 </view>
 
 <view class="clearfix">
-    <view class="related-tit bg-fff mgt20 tabs-tit">
+    <view class="related-tit2 bg-fff mgt20 tabs-tit">
         <b>隐私保护</b>
         <view class="btn-one-more fr">
         </view>
