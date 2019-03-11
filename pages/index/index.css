@@ -1,3 +1,4 @@
+.clear{clear: both;}
 .top-banner{width: 100%; background: #dc0011; height: 150rpx; margin-bottom: 10rpx;}
 .inline-black{display: inline-block;}
 .top_logo image{width: 88rpx; height: 88rpx; border-radius: 50%; margin-top: 44rpx; margin-left: 20rpx; display: inline-block;}
@@ -5,6 +6,150 @@
 .search{ padding: 5rpx 10rpx 10rpx 10rpx;}
 .search input{background: #DDD;  border-radius: 20rpx; font-size:30rpx; padding: 10rpx;  }
 .search input::placeholder{font-size:10rpx;  color: #323232}
-.slide-image{width: 100%;}
-.small-box{width: 20%; float: left;}
-.small-box image{    min-width: 0.8rem;max-width: 0.8rem;display: inline-block;}
+.slide-image{width: 100%; height: 400rpx;}
+.nav-side{clear: both;}
+.small-box{width: 19%; float: left; display: flex; flex-direction: column; align-items: center; margin-left: 1%; text-align: center; font-size:24rpx; margin-top: 30rpx;}
+.small-box image{width: 100rpx;height: 100rpx; }
+.brand-conatiner{clear: both; background: #f3f5f7}
+.recommend {
+    clear: both;
+    margin-top: 30rpx;
+    height: 58rpx;
+    background: #FFFFFF;
+    padding-left: 20rpx;
+}
+.recommend image {
+    display: block;
+    width: 240rpx;
+    height:24rpx;
+    float: left;
+    margin-right: 14rpx;
+    margin-top: 14rpx;
+}
+#moocBox {
+    float: left;
+    height: 48rpx;
+    line-height: 48rpx;
+    overflow: hidden;
+    width: 440rpx;
+    font-size: 24rpx;
+    margin: 0;
+    margin-top: 4rpx;
+}
+.related-tit{
+line-height: 80rpx;
+color: #282828;
+font-size: 28rpx;
+padding: 3rpx;
+overflow: hidden;
+}
+.related-tit > text.xptj {
+    display: block;
+    width: 110rpx;
+    height: 60rpx;
+    margin-left: 10rpx;
+    float: left;
+    margin-top: 4rpx;
+    background: url(../../images/xinpintuijian.png) no-repeat center;
+    background-size: 100%;
+}
+.related-tit > text.jpxm {
+    display: block;
+    width: 110rpx;
+    height: 60rpx;
+    margin-left: 10rpx;
+    float: left;
+    margin-top: 4rpx;
+    background: url(../../images/jinpinxiangmu.png) no-repeat center;
+    background-size: 100%;
+}
+.btn-one-more {
+    color: #999;
+    float: right;
+    padding-right: 10rpx;
+    font-size: 26rpx;
+}
+.ic-one-more{
+    width: 30rpx;
+    height: 30rpx;
+    margin-top: 25rpx;
+    margin-left: 10rpx;
+    background: url(../../images/icon-huanyipi.png) no-repeat center;
+    background-size: 100%;
+    float: right;
+}
+.tabs-ctn .content {
+    padding: 3rpx;
+    overflow: hidden;
+}
+.tabs-ctn .content:nth-of-type(1), .news-content:nth-of-type(1) {
+    display: block;
+}
+.content .li {
+    background: #FFFFFF;
+    border-bottom: 1px solid #DEDEDE;
+    position: relative;
+    float: left;
+    width: 43%;
+    height: 300rpx;
+    margin-left: 36rpx;
+    margin-bottom: 20rpx;
+    border-radius: 10rpx;
+    box-shadow: 1rpx 0.5rpx rgba(0,0,0,0.1);
+}
+.content .li image {
+    width: 100%;
+    height: 164rpx;
+    display: block;
+    border-top-left-radius: 1rpx;
+    border-top-right-radius: 1rpx;
+}
+
+.online-title {
+    color: #292929;
+    font-size: 26rpx;
+    line-height: 30rpx;
+    height: 30rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    margin-top: 20rpx;
+}
+.content .li text {
+    display: block;
+    overflow: hidden;
+    padding-left: 8rpx;
+}
+.online-name {
+    color: #999;
+    font-size: 18rpx;
+    line-height: 20rpx;
+    height: 20rpx;
+    margin-top: 8rpx;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+}
+.online-money {
+    color: #e50012;
+    font-size: 30rpx;
+    line-height: 24rpx;
+    margin-top: 22rpx;
+    height: 30rpx;
+    float: left;
+}
+#rmb {
+    font-size: 24rpx;
+    line-height: 24rpx;
+    display: inline-block;
+}
+.timespan {
+    height: 24rpx;
+    line-height: 24rpx;
+    float: right;
+    display: block;
+    margin-top: 18rpx;
+    font-size: 24rpx;
+    margin-right: 13rpx;
+    color: #999;
+}

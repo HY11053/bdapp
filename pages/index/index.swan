@@ -1,3 +1,4 @@
+<!--
 <view class="top-banner">
 	<view class="top_logo inline-block">
 		<image src="../../images/nav-logo2.png"></image>
@@ -6,6 +7,7 @@
 		<text class="top_title">51加盟网</text>
 	</view>
 </view>
+-->
 <view class="search">
     <form bindsubmit="formSubmitHandle" bindreset="formReset" report-submit>
         <view class="btn-area">
@@ -48,5 +50,379 @@
         <view class="small-box rightbox">
             <image src="../../images/huoguo.png"></image><view>火锅加盟</view>
         </view>
+        <view class="small-box rightbox">
+            <image src="../../images/huoguo.png"></image><view>火锅加盟</view>
+        </view>
+        <view class="small-box rightbox">
+            <image src="../../images/huoguo.png"></image><view>火锅加盟</view>
+        </view>
+        <view class="clear"></view>
+    </view>
+</view>
+<view class="recommend clearfix">
+<image src="../../images/icon-kmtt.png"></image>
+    <swiper vertical="true" autoplay="true" interval="3000" duration="500" id="moocBox">
+        <block>
+            <swiper-item><view>姥妈麻辣烫加盟 加盟费 招商代理条件 电话</view></swiper-item>
+            <swiper-item><view>川湘家常菜加盟 加盟费 招商代理条件 电话</view></swiper-item>
+            <swiper-item><view>灶台鱼加盟 加盟费 招商代理条件 加盟电话</view></swiper-item>
+        </block>
+    </swiper>
+</view>
+<view class="brand-conatiner">
+<view class="related-tit tabs-tit">
+    <text class="xptj"></text>
+    <view class="btn-one-more fr">
+        <span class="ic-one-more"></span>换一批
+    </view>
+</view>
+<view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
+    <view class="content cy-item ">
+        <view class="li">
+            <view href="/index.php/brand/1786/">
+                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                <text class="online-title">杨国福麻辣烫</text>
+                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                <text class="timespan">18-04-19</text>
+            </view>
+        </view>
+        <view class="li">
+            <view href="/index.php/brand/1786/">
+                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                <text class="online-title">杨国福麻辣烫</text>
+                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                <text class="timespan">18-04-19</text>
+            </view>
+        </view>
+        <view class="li">
+            <view href="/index.php/brand/1786/">
+                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                <text class="online-title">杨国福麻辣烫</text>
+                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                <text class="timespan">18-04-19</text>
+            </view>
+        </view>
+        <view class="li">
+            <view href="/index.php/brand/1786/">
+                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                <text class="online-title">杨国福麻辣烫</text>
+                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                <text class="timespan">18-04-19</text>
+            </view>
+        </view>
+    </view>
+</view>
+</view>
+<view class="brand-conatiner">
+    <view class="related-tit tabs-tit">
+        <text class="jpxm"></text>
+        <view class="btn-one-more fr">
+            <span class="ic-one-more"></span>换一批
+        </view>
+    </view>
+    <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
+        <view class="content cy-item ">
+            <view class="li">
+                <view href="/index.php/brand/1786/">
+                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                    <text class="online-title">杨国福麻辣烫</text>
+                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                    <text class="timespan">18-04-19</text>
+                </view>
+            </view>
+            <view class="li">
+                <view href="/index.php/brand/1786/">
+                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                    <text class="online-title">杨国福麻辣烫</text>
+                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                    <text class="timespan">18-04-19</text>
+                </view>
+            </view>
+            <view class="li">
+                <view href="/index.php/brand/1786/">
+                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                    <text class="online-title">杨国福麻辣烫</text>
+                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                    <text class="timespan">18-04-19</text>
+                </view>
+            </view>
+            <view class="li">
+                <view href="/index.php/brand/1786/">
+                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
+                    <text class="online-title">杨国福麻辣烫</text>
+                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
+                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
+                    <text class="timespan">18-04-19</text>
+                </view>
+            </view>
+        </view>
+    </view>
+</view>
+
+<view class="news clearfix">
+    <view class="favor-header-bar clearfix">
+        <ul class="tabs">
+            <li class="on">品牌新闻<i></i></li>
+            <li class="">加盟指南<i></i></li>
+            <li class="">投资分析<i></i></li>
+            <li class="">经营管理<i></i></li>
+        </ul>
+    </view>
+    <view>
+        <view class="news-content" style="display: block;">
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32550/">投资一家家全居需要多少钱？万元加盟好项目等你来</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/91d8fa30051f2613f6c88d426e7b216e.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/1b946a4b68662e8d6371a4723e924a95.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/7cbddc9db37271b35901c34bbe495e4d.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 16:54:17</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32549/">家全居加盟条件是什么？条件简单，满足就加盟</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/91d8fa30051f2613f6c88d426e7b216e.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/1b946a4b68662e8d6371a4723e924a95.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/7cbddc9db37271b35901c34bbe495e4d.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 16:51:07</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32537/">悠悠奶茶店加盟怎么样？总部全程扶持，为你保驾护航</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/46d46da20fbb73d52893cfcbce8629ad.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/1ebece0f9c435d1cb3c9c27d384d149b.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/fd43f49342025853fe6aa3f294f76598.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 16:23:06</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32531/">家全居加盟怎么样？优势多，流程简</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/91d8fa30051f2613f6c88d426e7b216e.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/1b946a4b68662e8d6371a4723e924a95.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/7cbddc9db37271b35901c34bbe495e4d.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 15:18:45</span>
+                </dd>
+            </dl>
+        </view>
+        <view class="news-content" style="display: none;">
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32554/">可心便当加盟需要什么条件？可心便当加盟有什么优势？</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/49716ae9be2e81c4946328c448a4ab94.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/d7410e402d4bf7d3703efd38b0f26bb8.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/53effbf42491dc612cee8d48a4341fcd.jpg" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 17:10:35</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32551/">新三国烤猪蹄加盟费多少钱?只需要几万元，就能开家属于自己的店</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/666bc481f43ef83ad83ff230a8f8a7ad.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/0cde29a5ae4e1e243af68aa418d75159.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/872c3f07e94d09ddad3249dc5ab7273e.jpg" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 17:00:32</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32547/">小心蹄你加盟费多少钱?投资万元，就能开店创业</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/6946ae947743a4763247ac5295e17c83.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/6055709e01cb8b924606bf60cae1071c.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/bea8b2195c366dd76e52fa42d85751fb.jpg" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 16:44:12</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32546/">渔禾寿司加盟怎么样?9大扶持保驾护航让您大胆开店</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/2c7cdb31381e296c345d4d692878d1c2.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/760d51cd258660bca9ade0d53290973c.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/5e1dea07242e8863843a928ff159255e.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 16:43:20</span>
+                </dd>
+            </dl>
+        </view>
+        <view class="news-content" style="display: none;">
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32553/">可心便当加盟需要多少钱？万元的加盟好项目</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/49716ae9be2e81c4946328c448a4ab94.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/d7410e402d4bf7d3703efd38b0f26bb8.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/53effbf42491dc612cee8d48a4341fcd.jpg" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 17:04:58</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32552/">新三国烤猪蹄加盟怎么样?创业有保障，创富无忧</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/666bc481f43ef83ad83ff230a8f8a7ad.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/0cde29a5ae4e1e243af68aa418d75159.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/872c3f07e94d09ddad3249dc5ab7273e.jpg" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 17:01:27</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32548/">小心蹄你加盟怎么样?一店顶多店，盈利无淡季</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/6946ae947743a4763247ac5295e17c83.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/6055709e01cb8b924606bf60cae1071c.jpg" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/bea8b2195c366dd76e52fa42d85751fb.jpg" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 16:45:03</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/32545/">渔禾寿司加盟费用多少钱?投入几万即可轻松经营开店</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/storage/uploads/2019/03/08/2c7cdb31381e296c345d4d692878d1c2.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/760d51cd258660bca9ade0d53290973c.png" class="fl mgr150 ">
+                    <img src="/storage/uploads/2019/03/08/5e1dea07242e8863843a928ff159255e.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2019-03-08 16:43:13</span>
+                </dd>
+            </dl>
+        </view>
+        <view class="news-content" style="display: none;">
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/24177/">舌间味零食加盟店要怎么样经营？选好店址是盈利的前提</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/public/images/upload/2015/08/04/ed705b2e1b6f79ab1ea7021a2ecbd30f.jpg" class="fl mgr150 ">
+                    <img src="/public/images/upload/2015/10/31/7bb43f5d2719272d631f020fb5cd1569.jpg" class="fl mgr150 ">
+                    <img src="/public/images/upload/2015/10/31/9eb79684c1f89e85425d7e9e7f8a187c.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2018-08-21 11:30:07</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/23860/">偷嘴猫休闲食品加盟赚钱吗？掌握技巧 盈利更轻松</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/images/thread/2018/10/24/12708faa82876e1080aa85ae30a867e6.png" class="fl mgr150 ">
+                    <img src="/images/thread/2018/10/24/fbcdd356336a1ccd819cae7f36759b29.png" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2018-08-15 11:43:24</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/23590/">百比佳零食加盟店要怎样经营？总部全程支持 经营无忧</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/public/images/upload/2015/08/05/d0d2533d6d2622f58ccc57231cbd2c92.jpg" class="fl mgr150 ">
+                    <img src="/public/images/upload/2015/11/21/a66697bb46acff7592a216127b4ec18b.jpg" class="fl mgr150 ">
+                    <img src="/public/images/upload/2015/11/21/7dda6f377925955a71669d3a97ccc8a0.jpg" class="fl ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2018-08-10 10:17:12</span>
+                </dd>
+            </dl>
+            <dl class="newslist1">
+                <dt class="dd-two">
+                    <p class="newslist-tit p-two"><a href="/index.php/news/23514/">开一家白老五炒货加盟店要怎样经营？口碑好 经营轻松</a></p>
+                    <p class="newslist-text p1-two"></p>
+                </dt>
+                <dd class="dt-two dt-two1 clearfix">
+                    <img src="/public/images/upload/2016/11/10/e1ffd4878431278de70a17a19d998d9b.jpg" class="fl mgr150 ">
+                </dd>
+                <dd class="publish ">
+                    <span class="fl publish-text">来源：51加盟网</span>
+                    <span class=" publish-text fl">2018-08-09 11:25:21</span>
+                </dd>
+            </dl>
+        </view>
+    </view>
+    <view class="lxmore">
+        <a href="/bnlist/">查看更多<i></i></a>
     </view>
 </view>

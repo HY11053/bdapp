@@ -22,10 +22,10 @@
         "pages/kf/index"
     ],
     "window": {
-        "navigationBarBackgroundColor": "#ffffff",
-        "navigationBarTextStyle": "black",
+        "navigationBarBackgroundColor": "#dc0011",
+        "navigationBarTextStyle": "#fff",
         "navigationBarTitleText": "51加盟网",
-        "navigationStyle": "custom",
+        "navigationStyle": "default",
         "backgroundTextStyle": "light"
     },
     "networkTimeout": {
