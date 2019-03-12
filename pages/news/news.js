@@ -1,6 +1,12 @@
 Page({
     data: {
-
+        imgs: [
+            "https://m.51xxsp.com/51xxsp/images/133113481.jpg",
+            "https://m.51xxsp.com/51xxsp/images/133113481232.jpg",
+            "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
+            "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
+            "https://m.51xxsp.com/51xxsp/images/1331134813.jpg"
+        ]
     },
     onLoad: function () {
         // 监听页面加载的生命周期函数

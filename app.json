@@ -1,35 +1,14 @@
 {
     "debug": true,
     "pages": [
-        "pages/blists/blists",
         "pages/index/index",
-        "pages/nlists/nlists",
-        "pages/detail/detail",
-        "pages/bbzl/index",
-        "pages/dlbm/index",
-        "pages/jqxx/index",
-        "pages/jcgm/index",
-        "pages/stkc/index",
-        "pages/mkcx/index",
-        "pages/xqpg/index",
-        "pages/stkcDetail/index",
-        "pages/stkcdora/index",
-        "pages/stkcmich/index",
-        "pages/stkcmike/index",
-        "pages/stkcsdanvi/index",
-        "pages/sibo/sibo",
-        "pages/bkzn/bkzn",
-        "pages/ep/ep",
-        "pages/accazs/index",
-        "pages/kf/index",
-        "pages/blists/blists",
         "pages/blists/blists",
         "pages/nlists/nlists",
         "pages/news/news"
     ],
     "window": {
         "navigationBarBackgroundColor": "#dc0011",
-        "navigationBarTextStyle": "#fff",
+        "navigationBarTextStyle": "white",
         "navigationBarTitleText": "51加盟网",
         "navigationStyle": "default",
         "backgroundTextStyle": "light"
@@ -43,19 +22,19 @@
                 "text": "首页"
             },
             {
-                "pagePath": "pages/detail/detail",
+                "pagePath": "pages/blists/blists",
                 "iconPath": "images/brand.png",
                 "selectedIconPath": "images/brand-cur.png",
                 "text": "品牌"
             },
             {
-                "pagePath": "pages/detail/detail",
+                "pagePath": "pages/nlists/nlists",
                 "iconPath": "images/paihang1.png",
                 "selectedIconPath": "images/paihang-cur.png",
                 "text": "排行榜"
             },
             {
-                "pagePath": "pages/detail/detail",
+                "pagePath": "pages/nlists/nlists",
                 "iconPath": "images/zixun.png",
                 "selectedIconPath": "images/zixun-cur.png",
                 "text": "资讯"
