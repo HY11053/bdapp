@@ -160,78 +160,87 @@
 
 <view class="news clearfix">
     <view class="favor-header-bar clearfix">
-        <view class="tabs">
-            <view class="tab-inlne on">品牌新闻</view>
-            <view class="tab-inlne">加盟指南</view>
-            <view class="tab-inlne">投资分析</view>
-            <view class="tab-inlne">经营管理</view>
+        <view class="tabs swiper-tab">
+            <view class="tab-inlne {{currentTab==0?'on':''}}"  data-current="0" bindtap="clickTab">品牌新闻</view>
+            <view class="tab-inlne {{currentTab==1?'on':''}}"  data-current="1" bindtap="clickTab">加盟指南</view>
+            <view class="tab-inlne {{currentTab==2?'on':''}}"  data-current="2" bindtap="clickTab">投资分析</view>
+            <view class="tab-inlne {{currentTab==3?'on':''}}"  data-current="3" bindtap="clickTab">经营管理</view>
         </view>
     </view>
     <view>
-        <view class="news-content" style="display: block;">
-            <view class="newslist1">
-                <view class="dd-two">
-                    <view class="newslist-tit p-two"><text href="/index.php/news/32550/">投资一家家全居需要多少钱？万元加盟好项目等你来</text></view>
-                    <view class="newslist-text p1-two"></view>
-                </view>
-                <view class="dt-two dt-two1 clearfix">
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/91d8fa30051f2613f6c88d426e7b216e.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/1b946a4b68662e8d6371a4723e924a95.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/7cbddc9db37271b35901c34bbe495e4d.png" class="fl "></image>
-                </view>
-                <view class="publish ">
-                    <text class="fl publish-text">来源：51加盟网</text>
-                    <text class=" publish-text fl">2019-03-08 16:54:17</text>
-                </view>
-            </view>
-            <view class="newslist1">
-                <view class="dd-two">
-                    <view class="newslist-tit p-two"><text href="/index.php/news/32550/">投资一家家全居需要多少钱？万元加盟好项目等你来</text></view>
-                    <view class="newslist-text p1-two"></view>
-                </view>
-                <view class="dt-two dt-two1 clearfix">
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/91d8fa30051f2613f6c88d426e7b216e.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/1b946a4b68662e8d6371a4723e924a95.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/7cbddc9db37271b35901c34bbe495e4d.png" class="fl "></image>
-                </view>
-                <view class="publish ">
-                    <text class="fl publish-text">来源：51加盟网</text>
-                    <text class=" publish-text fl">2019-03-08 16:54:17</text>
+        <swiper class="auto"  current="{{currentTab}}" duration="300"  bindchange="swiperTab">
+            <view class="swiper-item">
+                <view class="news-content ">
+                    <view class="newslist1" s-for="newarticle in newarticles">
+                        <view class="dd-two">
+                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-text p1-two"></view>
+                        </view>
+                        <view class="dt-two dt-two1 clearfix">
+                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                        </view>
+                        <view class="publish ">
+                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class=" publish-text fl">{{newarticle.created_at}}</text>
+                        </view>
+                    </view>
                 </view>
             </view>
-            <view class="newslist1">
-                <view class="dd-two">
-                    <view class="newslist-tit p-two"><text href="/index.php/news/32550/">投资一家家全居需要多少钱？万元加盟好项目等你来</text></view>
-                    <view class="newslist-text p1-two"></view>
-                </view>
-                <view class="dt-two dt-two1 clearfix">
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/91d8fa30051f2613f6c88d426e7b216e.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/1b946a4b68662e8d6371a4723e924a95.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/7cbddc9db37271b35901c34bbe495e4d.png" class="fl "></image>
-                </view>
-                <view class="publish ">
-                    <text class="fl publish-text">来源：51加盟网</text>
-                    <text class=" publish-text fl">2019-03-08 16:54:17</text>
-                </view>
-            </view>
-            <view class="newslist1">
-                <view class="dd-two">
-                    <view class="newslist-tit p-two"><text href="/index.php/news/32550/">投资一家家全居需要多少钱？万元加盟好项目等你来</text></view>
-                    <view class="newslist-text p1-two"></view>
-                </view>
-                <view class="dt-two dt-two1 clearfix">
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/91d8fa30051f2613f6c88d426e7b216e.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/1b946a4b68662e8d6371a4723e924a95.png" class="fl mgr150 "></image>
-                    <image src="https://m.51xxsp.com/storage/uploads/2019/03/08/7cbddc9db37271b35901c34bbe495e4d.png" class="fl "></image>
-                </view>
-                <view class="publish ">
-                    <text class="fl publish-text">来源：51加盟网</text>
-                    <text class=" publish-text fl">2019-03-08 16:54:17</text>
+            <view class="swiper-item">
+                <view class="news-content ">
+                    <view class="newslist1" s-for="newarticle in newarticles">
+                        <view class="dd-two">
+                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-text p1-two"></view>
+                        </view>
+                        <view class="dt-two dt-two1 clearfix">
+                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                        </view>
+                        <view class="publish ">
+                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class=" publish-text fl">{{newarticle.created_at}}</text>
+                        </view>
+                    </view>
                 </view>
             </view>
-        </view>
+            <view class="swiper-item">
+                <view class="news-content ">
+                    <view class="newslist1" s-for="newarticle in newarticles">
+                        <view class="dd-two">
+                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-text p1-two"></view>
+                        </view>
+                        <view class="dt-two dt-two1 clearfix">
+                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                        </view>
+                        <view class="publish ">
+                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class=" publish-text fl">{{newarticle.created_at}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+            <view class="swiper-item">
+                <view class="news-content ">
+                    <view class="newslist1" s-for="newarticle in newarticles">
+                        <view class="dd-two">
+                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-text p1-two"></view>
+                        </view>
+                        <view class="dt-two dt-two1 clearfix">
+                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                        </view>
+                        <view class="publish ">
+                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class=" publish-text fl">{{newarticle.created_at}}</text>
+                        </view>
+                    </view>
+                </view>
+            </view>
+        </swiper>
+        <view class="clear"></view>
     </view>
-    <view class="lxmore">
+        <view class="lxmore">
         <text href="/bnlist/">查看更多</text>
     </view>
 </view>

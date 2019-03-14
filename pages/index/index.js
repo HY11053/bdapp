@@ -9,6 +9,8 @@ Page({
       "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
       "https://m.51xxsp.com/51xxsp/images/1331134813.jpg"
     ],
+      currentTab:0,
+      newsarticles:'',
   },
   selected: function (e) {
     this.setData({
@@ -53,6 +55,38 @@ Page({
       selected1: true
     });
   },
+    //滑动切换
+    swiperTab: function (e) {
+        var that = this;
+        that.setData({
+            currentTab: e.detail.current
+        });
+    },
+    //点击切换
+    clickTab: function (e) {
+        var that = this;
+        if (this.data.currentTab === e.target.dataset.current) {
+            return false;
+        } else {
+            that.setData({
+                currentTab: e.target.dataset.current
+            })
+        }
+    },
+    //swiper 高度自适用
+    viewHeight: function (e) {
+        //获取图片真实宽度
+        var width = e.detail.width;
+        var height = e.detail.height;
+        //宽高比
+        var scale= width / height;
+        //计算的高度值
+        var itemHeight = 750 / scale;
+        console.log(itemHeight)
+        this.setData({
+            itemHeight: itemHeight
+        })
+    },
     onLoad: function () {
         // 监听页面加载的生命周期函数
         swan.setPageInfo && swan.setPageInfo({
@@ -67,7 +101,31 @@ Page({
                 console.log('页面基础信息设置完成');
             }
         });
-        this.requestApi('app');
+        this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=5');
+        //this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=2');
+        //this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=2');
+        //this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=4');
+    },
+    //请求功能函数
+    requestApi:function(api)
+    {
+        var that=this
+        swan.request({
+            url: api, // 仅为示例，并非真实的接口地址
+            header: {
+                'content-type': 'application/json' // 默认值
+            },
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                console.log(res.data)
+                that.setData({ newarticles:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
     },
     onReady: function() {
         // 监听页面初次渲染完成的生命周期函数
@@ -90,22 +148,5 @@ Page({
     onShareAppMessage: function () {
         // 用户点击右上角转发
     },
-    //请求功能函数
-    requestApi:function(api)
-    {
-        swan.request({
-            url: api, // 仅为示例，并非真实的接口地址
-            header: {
-                'content-type': 'application/json' // 默认值
-            },
-            method: 'POST',
-            dataType: 'json',
-            success: function (res) {
-            },
-            fail: function (err) {
-                console.log('错误码：' + err.errCode);
-                console.log('错误信息：' + err.errMsg);
-            }
-        });
-    },
+
 });
