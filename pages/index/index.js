@@ -36,25 +36,7 @@ Page({
       url: '/pages/news/news'
     });
   },
-  /**问一问查一查跳转到第三方小程序 */
-  appid_tz: function () {
-    swan.navigateToSmartProgram({
-      appId: 'wxe798424c0caaca13',
-      path: 'pages/index/index',
-      extraData: {},
-      envVersion: 'release',
-      success(res) {
-        // 打开成功
-      }
-    });
-  },
 
-  selected1: function (e) {
-    this.setData({
-      selected: false,
-      selected1: true
-    });
-  },
     //滑动切换
     swiperTab: function (e) {
         var that = this;
@@ -87,39 +69,91 @@ Page({
             itemHeight: itemHeight
         })
     },
+    //内容详情页
+    toDetail(event){
+        // console.log(event);
+        //获取点击跳转对应的下标
+        let index = event.currentTarget.dataset.index
+        console.log(event)
+        swan.navigateTo({
+            url: '/pages/news/news?index='+index,
+        })
+    },
     onLoad: function () {
         // 监听页面加载的生命周期函数
-        swan.setPageInfo && swan.setPageInfo({
-            title: '晒元宵节活动红包，爱奇艺60张年卡、600张季卡等你拿！-百度贴吧',
-            keywords: '百度,百度贴吧,好运中国年,60,晒元,宵节',
-            description: '晒元宵节活动红包，爱..昨天的百度APP元宵节活动中，共发出2亿现金红包、含151万个手气现金大奖和240辆红旗轿车，谁是好运锦鲤，快来分享！马上惊喜升级~摇中红包的锦鲤们即刻晒出红包金额截图，我们将会抽取660位好运锦鲤',
-            articleTitle: '晒元宵节活动红包，爱奇艺60张年卡、600张季卡等你拿！',
-            releaseDate: '2019-01-02 12:01:30',
-            // 单张图时值可以是字符串
-            image: this.data.imgs,
-            success: function () {
-                console.log('页面基础信息设置完成');
-            }
-        });
-        this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=5');
-        //this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=2');
-        //this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=2');
-        //this.requestApi('https://www.51xxsp.com/api/articles/?take=5&orderby=id&brandpic=1&typeid=4');
-    },
-    //请求功能函数
-    requestApi:function(api)
-    {
         var that=this
+        //精品推荐
         swan.request({
-            url: api, // 仅为示例，并非真实的接口地址
-            header: {
-                'content-type': 'application/json' // 默认值
-            },
+            url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=click", //请求地址
             method: 'GET',
             dataType: 'json',
             success: function (res) {
-                console.log(res.data)
+                that.setData({ cbrands:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //精品推荐
+        swan.request({
+            url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=id", //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ newbrands:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //品牌新闻
+        swan.request({
+            url: app.globalData.baseUrl+"articles/?take=5&orderby=id&brandpic=1&typeid=5",
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
                 that.setData({ newarticles:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //加盟指南
+        swan.request({
+            url: app.globalData.baseUrl+"articles/?take=5&orderby=id&brandpic=1&typeid=1", //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ zhinanarticles:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //投资分析
+        swan.request({
+            url: app.globalData.baseUrl+"articles/?take=5&orderby=id&brandpic=1&typeid=2", //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ touziarticles:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //经营管理
+        swan.request({
+            url: app.globalData.baseUrl+"articles/?take=5&orderby=id&brandpic=1&typeid=4", //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ jingyingarticles:res.data });
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);
@@ -132,6 +166,18 @@ Page({
     },
     onShow: function() {
         // 监听页面显示的生命周期函数
+        swan.setPageInfo && swan.setPageInfo({
+            title: '51加盟网-零食、餐饮加盟招商一站式连锁加盟创业综合服务平台',
+            keywords: '51加盟网-零食、餐饮加盟招商一站式连锁加盟创业综合服务平台',
+            description: '51加盟网致力打造国内安全可靠的零食、餐饮、酒水饮料、酒店等行业加盟创业商机平台，为投资者甄选优质加盟创业项目，实时提供零食、餐饮、酒水饮料、酒店、教育等招商加盟创业信息，让投资者快速找到适合自己的创业加盟品牌，轻松开店创业',
+            articleTitle: '餐饮加盟,零食店加盟,餐饮招商加盟,休闲食品加盟,餐饮加盟品牌,餐饮品牌,零食加盟品牌,休闲食品品牌排行榜',
+            releaseDate: '2019-01-02 12:01:30',
+            // 单张图时值可以是字符串
+            image: this.data.imgs,
+            success: function () {
+                console.log('页面基础信息设置完成');
+            }
+        });
     },
     onHide: function() {
         // 监听页面隐藏的生命周期函数

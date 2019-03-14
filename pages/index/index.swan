@@ -63,47 +63,20 @@
 </view>
 <view class="brand-conatiner">
 <view class="related-tit tabs-tit">
-    <text class="xptj"></text>
+    <text class="jpxm"></text>
     <view class="btn-one-more fr">
         <text class="ic-one-more"></text>换一批
     </view>
 </view>
 <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
     <view class="content cy-item ">
-        <view class="li">
-            <view href="/index.php/brand/1786/">
-                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                <text class="online-title">杨国福麻辣烫</text>
-                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                <text class="timespan">18-04-19</text>
-            </view>
-        </view>
-        <view class="li">
-            <view href="/index.php/brand/1786/">
-                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                <text class="online-title">杨国福麻辣烫</text>
-                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                <text class="timespan">18-04-19</text>
-            </view>
-        </view>
-        <view class="li">
-            <view href="/index.php/brand/1786/">
-                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                <text class="online-title">杨国福麻辣烫</text>
-                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                <text class="timespan">18-04-19</text>
-            </view>
-        </view>
-        <view class="li">
-            <view href="/index.php/brand/1786/">
-                <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                <text class="online-title">杨国福麻辣烫</text>
-                <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                <text class="timespan">18-04-19</text>
+        <view s-for="cbrand in cbrands" class="li">
+            <view catchtap="toDetail" data-index="{{cbrand.id}}">
+                <image src="https://www.51xxsp.com{{cbrand.litpic}}"></image>
+                <text class="online-title">{{cbrand.brandname}}</text>
+                <text class="online-name">{{cbrand.brandgroup}}</text>
+                <view class="online-money"><text id="rmb">￥</text>{{cbrand.brandpay}}</view>
+                <text class="timespan">{{ cbrand.created_at}}</text>
             </view>
         </view>
     </view>
@@ -111,47 +84,20 @@
 </view>
 <view class="brand-conatiner">
     <view class="related-tit tabs-tit">
-        <text class="jpxm"></text>
+        <text class="xptj"></text>
         <view class="btn-one-more fr">
             <text class="ic-one-more"></text>换一批
         </view>
     </view>
     <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
         <view class="content cy-item ">
-            <view class="li">
+            <view s-for="newbrand in newbrands" class="li">
                 <view href="/index.php/brand/1786/">
-                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                    <text class="online-title">杨国福麻辣烫</text>
-                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                    <text class="timespan">18-04-19</text>
-                </view>
-            </view>
-            <view class="li">
-                <view href="/index.php/brand/1786/">
-                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                    <text class="online-title">杨国福麻辣烫</text>
-                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                    <text class="timespan">18-04-19</text>
-                </view>
-            </view>
-            <view class="li">
-                <view href="/index.php/brand/1786/">
-                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                    <text class="online-title">杨国福麻辣烫</text>
-                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                    <text class="timespan">18-04-19</text>
-                </view>
-            </view>
-            <view class="li">
-                <view href="/index.php/brand/1786/">
-                    <image src="https://m.51xxsp.com/images/thread/2018/08/20/91de7a416fac3d06cf1a7f4aab8b6ffa.jpg"></image>
-                    <text class="online-title">杨国福麻辣烫</text>
-                    <text class="online-name">哈尔滨杨国福麻辣烫餐饮有限公司</text>
-                    <view class="online-money"><text id="rmb">￥</text>3万以下</view>
-                    <text class="timespan">18-04-19</text>
+                    <image src="https://www.51xxsp.com{{newbrand.litpic}}"></image>
+                    <text class="online-title">{{newbrand.brandname}}</text>
+                    <text class="online-name">{{newbrand.brandgroup}}</text>
+                    <view class="online-money"><text id="rmb">￥</text>{{newbrand.brandpay}}</view>
+                    <text class="timespan">{{newbrand.created_at}}</text>
                 </view>
             </view>
         </view>
@@ -188,51 +134,51 @@
             </view>
             <view class="swiper-item">
                 <view class="news-content ">
-                    <view class="newslist1" s-for="newarticle in newarticles">
+                    <view class="newslist1" s-for="zhinanarticle in zhinanarticles">
                         <view class="dd-two">
-                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{zhinanarticle.title}}</text></view>
                             <view class="newslist-text p1-two"></view>
                         </view>
                         <view class="dt-two dt-two1 clearfix">
-                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                            <image s-for="imagepic in zhinanarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
                         </view>
                         <view class="publish ">
                             <text class="fl publish-text">来源：51加盟网</text>
-                            <text class=" publish-text fl">{{newarticle.created_at}}</text>
+                            <text class=" publish-text fl">{{zhinanarticle.created_at}}</text>
                         </view>
                     </view>
                 </view>
             </view>
             <view class="swiper-item">
                 <view class="news-content ">
-                    <view class="newslist1" s-for="newarticle in newarticles">
+                    <view class="newslist1" s-for="touziarticle in touziarticles">
                         <view class="dd-two">
-                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{touziarticle.title}}</text></view>
                             <view class="newslist-text p1-two"></view>
                         </view>
                         <view class="dt-two dt-two1 clearfix">
-                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                            <image s-for="imagepic in touziarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
                         </view>
                         <view class="publish ">
                             <text class="fl publish-text">来源：51加盟网</text>
-                            <text class=" publish-text fl">{{newarticle.created_at}}</text>
+                            <text class=" publish-text fl">{{touziarticle.created_at}}</text>
                         </view>
                     </view>
                 </view>
             </view>
             <view class="swiper-item">
                 <view class="news-content ">
-                    <view class="newslist1" s-for="newarticle in newarticles">
+                    <view class="newslist1" s-for="jingyingarticle in jingyingarticles">
                         <view class="dd-two">
-                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{jingyingarticle.title}}</text></view>
                             <view class="newslist-text p1-two"></view>
                         </view>
                         <view class="dt-two dt-two1 clearfix">
-                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                            <image s-for="imagepic in jingyingarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
                         </view>
                         <view class="publish ">
                             <text class="fl publish-text">来源：51加盟网</text>
-                            <text class=" publish-text fl">{{newarticle.created_at}}</text>
+                            <text class=" publish-text fl">{{jingyingarticle.created_at}}</text>
                         </view>
                     </view>
                 </view>

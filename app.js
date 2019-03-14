@@ -11,5 +11,11 @@ App({
     },
     onHide() {
         // do something when hide
+    },
+    onError: function () {
+        console.log('SWAN发生错误');
+    },
+    globalData: {
+        baseUrl:'https://www.51xxsp.com/api/'
     }
 });
