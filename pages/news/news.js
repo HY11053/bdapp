@@ -7,9 +7,12 @@ Page({
             "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
             "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
             "https://m.51xxsp.com/51xxsp/images/1331134813.jpg"
-        ]
+        ],
+        thisarticleinfos:''
     },
     onLoad: function (options) {
+        console.log(1)
+        this.setData({thisarticleinfos:options.index})
         // 监听页面加载的生命周期函数
         let index=options.index;
         var that=this
@@ -29,12 +32,13 @@ Page({
 
     },
     onReady: function() {
+        console.log(2)
         // 监听页面初次渲染完成的生命周期函数
     },
     onShow: function() {
+        console.log(3)
         // 监听页面显示的生命周期函数
-        var that=this
-        console.log(that.data.thisarticleinfos);
+        console.log(this.data.thisarticleinfos);
     },
     onHide: function() {
         // 监听页面隐藏的生命周期函数
