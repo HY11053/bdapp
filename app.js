@@ -16,6 +16,7 @@ App({
         console.log('SWAN发生错误');
     },
     globalData: {
-        baseUrl:'https://www.51xxsp.com/api/'
+        baseUrl:'https://www.51xxsp.com/api/',
+        baseName:'51加盟网',
     }
 });

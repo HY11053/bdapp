@@ -28,16 +28,16 @@
             <image src="https://m.51xxsp.com/m51xxsp/images/touzi.png"></image><view>投资分析</view>
         </view>
         <view class="small-box rightbox">
-                <image src="https://m.51xxsp.com/m51xxsp/images/jingying.png"></image><view>经营管理</view>
+            <image src="https://m.51xxsp.com/m51xxsp/images/jingying.png"></image><view>经营管理</view>
         </view>
         <view class="small-box rightbox">
-                <image src="https://m.51xxsp.com/m51xxsp/images/xinwen.png"></image><view>品牌新闻</view>
+            <image src="https://m.51xxsp.com/m51xxsp/images/xinwen.png"></image><view>品牌新闻</view>
         </view>
         <view class="small-box rightbox">
-                <image src="https://m.51xxsp.com/m51xxsp/images/paihang.png"></image><view>排行榜</view>
+            <image src="https://m.51xxsp.com/m51xxsp/images/paihang.png"></image><view>排行榜</view>
         </view>
         <view class="small-box rightbox">
-                <image src="https://m.51xxsp.com/m51xxsp/images/canyin.png"></image><view>餐饮加盟</view>
+            <image src="https://m.51xxsp.com/m51xxsp/images/canyin.png"></image><view>餐饮加盟</view>
         </view>
         <view class="small-box rightbox">
             <image src="https://m.51xxsp.com/m51xxsp/images/huoguo.png"></image><view>火锅加盟</view>
@@ -55,9 +55,7 @@
 <image src="https://m.51xxsp.com/m51xxsp/images/icon-kmtt.png"></image>
     <swiper vertical="true" autoplay="true" interval="3000" duration="500" id="moocBox">
         <block>
-            <swiper-item><view>姥妈麻辣烫加盟 加盟费 招商代理条件 电话</view></swiper-item>
-            <swiper-item><view>川湘家常菜加盟 加盟费 招商代理条件 电话</view></swiper-item>
-            <swiper-item><view>灶台鱼加盟 加盟费 招商代理条件 加盟电话</view></swiper-item>
+            <swiper-item s-for="abrand in abrands"><view  catchtap="toBrandArticle" data-index="{{abrand.id}}">{{abrand.title}}</view></swiper-item>
         </block>
     </swiper>
 </view>
@@ -71,8 +69,8 @@
 <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
     <view class="content cy-item ">
         <view s-for="cbrand in cbrands" class="li">
-            <view catchtap="toDetail" data-index="{{cbrand.id}}">
-                <image src="https://www.51xxsp.com{{cbrand.litpic}}"></image>
+            <view catchtap="toBrandArticle" data-index="{{cbrand.id}}">
+                <image src="{{cbrand.litpic}}"></image>
                 <text class="online-title">{{cbrand.brandname}}</text>
                 <text class="online-name">{{cbrand.brandgroup}}</text>
                 <view class="online-money"><text id="rmb">￥</text>{{cbrand.brandpay}}</view>
@@ -92,8 +90,8 @@
     <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
         <view class="content cy-item ">
             <view s-for="newbrand in newbrands" class="li">
-                <view href="/index.php/brand/1786/">
-                    <image src="https://www.51xxsp.com{{newbrand.litpic}}"></image>
+                <view  catchtap="toBrandArticle" data-index="{{newbrand.id}}">
+                    <image src="{{newbrand.litpic}}"></image>
                     <text class="online-title">{{newbrand.brandname}}</text>
                     <text class="online-name">{{newbrand.brandgroup}}</text>
                     <view class="online-money"><text id="rmb">￥</text>{{newbrand.brandpay}}</view>
@@ -119,14 +117,14 @@
                 <view class="news-content ">
                     <view class="newslist1" s-for="newarticle in newarticles">
                         <view class="dd-two">
-                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{newarticle.title}}</text></view>
+                            <view class="newslist-tit p-two"><text  catchtap="toArticle" data-index="{{newarticle.id}}">{{newarticle.title}}</text></view>
                             <view class="newslist-text p1-two"></view>
                         </view>
                         <view class="dt-two dt-two1 clearfix">
-                            <image s-for="imagepic in newarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                            <image s-for="imagepic in newarticle.imagepics" src="{{imagepic}}" class="fl mgr150 "></image>
                         </view>
                         <view class="publish ">
-                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class="fl publish-text">来源：{{basename}}</text>
                             <text class=" publish-text fl">{{newarticle.created_at}}</text>
                         </view>
                     </view>
@@ -136,14 +134,14 @@
                 <view class="news-content ">
                     <view class="newslist1" s-for="zhinanarticle in zhinanarticles">
                         <view class="dd-two">
-                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{zhinanarticle.title}}</text></view>
+                            <view class="newslist-tit p-two"><text  catchtap="toArticle" data-index="{{zhinanarticle.id}}">{{zhinanarticle.title}}</text></view>
                             <view class="newslist-text p1-two"></view>
                         </view>
                         <view class="dt-two dt-two1 clearfix">
-                            <image s-for="imagepic in zhinanarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                            <image s-for="imagepic in zhinanarticle.imagepics" src="{{imagepic}}" class="fl mgr150 "></image>
                         </view>
                         <view class="publish ">
-                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class="fl publish-text">来源：{{basename}}</text>
                             <text class=" publish-text fl">{{zhinanarticle.created_at}}</text>
                         </view>
                     </view>
@@ -153,14 +151,14 @@
                 <view class="news-content ">
                     <view class="newslist1" s-for="touziarticle in touziarticles">
                         <view class="dd-two">
-                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{touziarticle.title}}</text></view>
+                            <view class="newslist-tit p-two"><text catchtap="toArticle" data-index="{{touziarticle.id}}">{{touziarticle.title}}</text></view>
                             <view class="newslist-text p1-two"></view>
                         </view>
                         <view class="dt-two dt-two1 clearfix">
-                            <image s-for="imagepic in touziarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                            <image s-for="imagepic in touziarticle.imagepics" src="{{imagepic}}" class="fl mgr150 "></image>
                         </view>
                         <view class="publish ">
-                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class="fl publish-text">来源：{{basename}}</text>
                             <text class=" publish-text fl">{{touziarticle.created_at}}</text>
                         </view>
                     </view>
@@ -170,14 +168,14 @@
                 <view class="news-content ">
                     <view class="newslist1" s-for="jingyingarticle in jingyingarticles">
                         <view class="dd-two">
-                            <view class="newslist-tit p-two"><text href="/index.php/news/32550/">{{jingyingarticle.title}}</text></view>
+                            <view class="newslist-tit p-two"><text catchtap="toArticle" data-index="{{jingyingarticle.id}}">{{jingyingarticle.title}}</text></view>
                             <view class="newslist-text p1-two"></view>
                         </view>
                         <view class="dt-two dt-two1 clearfix">
-                            <image s-for="imagepic in jingyingarticle.imagepics" src="http://www.51xxsp.com{{imagepic}}" class="fl mgr150 "></image>
+                            <image s-for="imagepic in jingyingarticle.imagepics" src="{{imagepic}}" class="fl mgr150 "></image>
                         </view>
                         <view class="publish ">
-                            <text class="fl publish-text">来源：51加盟网</text>
+                            <text class="fl publish-text">来源：{{basename}}</text>
                             <text class=" publish-text fl">{{jingyingarticle.created_at}}</text>
                         </view>
                     </view>
@@ -193,7 +191,7 @@
 
 <view class="clearfix">
     <view class="related-tit2 bg-fff mgt20 tabs-tit">
-        <b>隐私保护</b>
+        <view>隐私保护</view>
         <view class="btn-one-more fr">
         </view>
     </view>

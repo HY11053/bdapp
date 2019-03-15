@@ -10,14 +10,9 @@ Page({
       "https://m.51xxsp.com/51xxsp/images/1331134813.jpg"
     ],
       currentTab:0,
-      newsarticles:'',
+      basename:app.globalData.baseName
   },
-  selected: function (e) {
-    this.setData({
-      selected1: false,
-      selected: true
-    });
-  },
+
   //品牌列表
   blists:function(){
     swan.navigateTo({
@@ -30,13 +25,12 @@ Page({
       url: '/pages/nlists/nlists'
     });
   },
-  //文档详情
-  news:function(){
-    swan.navigateTo({
-      url: '/pages/news/news'
-    });
-  },
-
+    //文档详情
+    news:function(){
+        swan.navigateTo({
+            url: '/pages/articles/articles'
+        });
+    },
     //滑动切换
     swiperTab: function (e) {
         var that = this;
@@ -70,18 +64,41 @@ Page({
         })
     },
     //内容详情页
-    toDetail(event){
+    toArticle(event){
         // console.log(event);
         //获取点击跳转对应的下标
         let index = event.currentTarget.dataset.index
         console.log(event)
         swan.navigateTo({
-            url: '/pages/news/news?index='+index,
+            url: '/pages/article/article?index='+index,
+        })
+    },
+    //品牌详情页
+    toBrandArticle(event){
+        // console.log(event);
+        //获取点击跳转对应的下标
+        let index = event.currentTarget.dataset.index
+        console.log(event)
+        swan.navigateTo({
+            url: '/pages/brandarticle/brandarticle?index='+index,
         })
     },
     onLoad: function () {
         // 监听页面加载的生命周期函数
         var that=this
+        //滚动推荐
+        swan.request({
+            url: app.globalData.baseUrl+"brandarticles/?take=3&orderby=id&flags=c", //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ abrands:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
         //精品推荐
         swan.request({
             url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=click", //请求地址

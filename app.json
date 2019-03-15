@@ -4,7 +4,8 @@
         "pages/index/index",
         "pages/blists/blists",
         "pages/nlists/nlists",
-        "pages/news/news"
+        "pages/article/article",
+        "pages/brandarticle/brandarticle"
     ],
     "window": {
         "navigationBarBackgroundColor": "#dc0011",
