@@ -72,7 +72,7 @@ Page({
                     image: that.data.thisarticleinfos.litpic,
                     success: function () {
                         console.log(that.data.thisarticleinfos.title);
-                        console.log('普通文档页面基础信息设置完成');
+                        console.log('品牌文档页面基础信息设置完成');
                     }
                 });
             },
@@ -81,13 +81,27 @@ Page({
                 console.log('错误信息：' + err.errMsg);
             }
         });
-        //精品推荐
+        //品牌资讯
         swan.request({
             url: app.globalData.baseUrl+"articles/?take=5&orderby=id&litpic=1&brandid="+that.data.id, //请求地址
             method: 'GET',
             dataType: 'json',
             success: function (res) {
                 that.setData({ brandnews:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //相关品牌推荐
+        swan.request({
+            url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=click&litpic=1&tid=1&aid="+that.data.id, //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ brandarticles:res.data });
+                console.log(that.data)
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);

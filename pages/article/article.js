@@ -14,6 +14,26 @@ Page({
             }]
         }],
     },
+    //内容详情页
+    toArticle(event){
+        // console.log(event);
+        //获取点击跳转对应的下标
+        let index = event.currentTarget.dataset.index
+        console.log(event)
+        swan.navigateTo({
+            url: '/pages/article/article?index='+index,
+        })
+    },
+    //品牌详情页
+    toBrandArticle(event){
+        // console.log(event);
+        //获取点击跳转对应的下标
+        let index = event.currentTarget.dataset.index
+        console.log(event)
+        swan.navigateTo({
+            url: '/pages/brandarticle/brandarticle?index='+index,
+        })
+    },
     onLoad: function (options) {
         let index=options.index;
         this.setData({id:options.index})
@@ -55,6 +75,33 @@ Page({
                         console.log('普通文档页面基础信息设置完成');
                     }
                 });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //品牌资讯
+        swan.request({
+            url: app.globalData.baseUrl+"articles/?take=5&orderby=id&litpic=1&brandid="+that.data.id, //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ brandnews:res.data });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //相关品牌推荐
+        swan.request({
+            url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=click&litpic=1&tid=1&aid="+that.data.id, //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ brandarticles:res.data });
+                console.log(that.data)
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);
