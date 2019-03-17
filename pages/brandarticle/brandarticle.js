@@ -2,17 +2,6 @@ var app = getApp();
 let wxParser = require('../../wxParser/index');
 Page({
     data: {
-        nodes: [{
-            name: 'p',
-            attrs: {
-                class: 'div_class',
-                style: 'line-height: 60px; color: red;'
-            },
-            children: [{
-                type: 'text',
-                text: 'Hello&nbsp;World!'
-            }]
-        }],
     },
     //内容详情页
     toArticle(event){
