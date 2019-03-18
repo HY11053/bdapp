@@ -19,18 +19,6 @@ Page({
       url: '/pages/blists/blists'
     });
   },
-  //文档列表
-  nlists:function(){
-    swan.navigateTo({
-      url: '/pages/nlists/nlists'
-    });
-  },
-    //文档详情
-    news:function(){
-        swan.navigateTo({
-            url: '/pages/articles/articles'
-        });
-    },
     //滑动切换
     swiperTab: function (e) {
         var that = this;
@@ -81,6 +69,16 @@ Page({
         console.log(event)
         swan.navigateTo({
             url: '/pages/brandarticle/brandarticle?index='+index,
+        })
+    },
+    //品牌列表页
+    toBrandList(event){
+        console.log(event);
+        //获取点击跳转对应的下标
+        let realPath = event.currentTarget.dataset.real_path
+        console.log(event)
+        swan.navigateTo({
+            url: '/pages/blists/blists?real_path='+realPath,
         })
     },
     onLoad: function () {

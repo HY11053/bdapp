@@ -72,7 +72,7 @@ Page({
         });
         //品牌资讯
         swan.request({
-            url: app.globalData.baseUrl+"articles/?take=5&orderby=id&litpic=1&brandid="+that.data.id, //请求地址
+            url: app.globalData.baseUrl+"articles/?take=5&orderby=id&litpic=1&bid=1&aid="+that.data.id, //请求地址
             method: 'GET',
             dataType: 'json',
             success: function (res) {
@@ -85,7 +85,7 @@ Page({
         });
         //相关品牌推荐
         swan.request({
-            url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=click&litpic=1&tid=1&aid="+that.data.id, //请求地址
+            url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=click&litpic=1&bid="+that.data.id, //请求地址
             method: 'GET',
             dataType: 'json',
             success: function (res) {

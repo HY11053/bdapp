@@ -113,34 +113,21 @@
                 <view class="article-icon"></view>
                 <view class="title">项目资讯</view>
                 <view class="item7content">
-                    <view class="item7list">
-                        <view href="/index.php/news/32664/">
+                    <view s-for="brandnew in brandnews" class="item7list">
+                        <view catchtap="toArticle" data-index="{{brandnew.id}}">
                             <view class="left fl">
-                                <view class="lefttitle">京谱小生花旦酸菜鱼加盟怎么样?小投资，市场广阔</view>
+                                <view class="lefttitle">{{brandnew.title}}</view>
                                 <view class="text">
                                     <view class="message">来源：51加盟网</view>
-                                    <view class="time">2019-03-11</view>
+                                    <view class="time">{{brandnew.created_at}}</view>
                                 </view>
                             </view>
                             <view class="right fr">
-                                <image src="https://www.51xxsp.com/storage/uploads/image/2019/03/11/fe31d27247853ba58dff7aab60b43165.jpg"></image>
+                                <image src="{{brandnew.litpic}}"></image>
                             </view>
                         </view>
                     </view>
-                    <view class="item7list">
-                        <view href="/index.php/news/32663/">
-                            <view class="left fl">
-                                <view class="lefttitle">京谱小生花旦酸菜鱼加盟费多少钱?投资小，万元即可创业成功</view>
-                                <view class="text">
-                                    <view class="message">来源：51加盟网</view>
-                                    <view class="time">2019-03-11</view>
-                                </view>
-                            </view>
-                            <view class="right fr">
-                                <image src="https://www.51xxsp.com/storage/uploads/image/2019/03/11/2c31e556ccb2120bb2e45d943b775b75.jpg"></image>
-                            </view>
-                        </view>
-                    </view>
+
 
                 </view>
             </view>
@@ -151,70 +138,23 @@
                 <view class="brand-icon"></view>
                 <view class="title">猜你喜欢</view>
                 <view class="item8content">
-                    <view class="item8list  fr ">
-                        <view href="/index.php/brand/1744/">
-                            <image src="https://www.51xxsp.com//images/thread/2018/04/18/e56b3408f25d21e34bfe37fc9b0c2346.jpg" alt="辣道酸菜鱼"></image>
+                    <view s-for="brandarticle in brandarticles" class="item8list">
+                        <view  catchtap="toBrandArticle" data-index="{{brandarticle.id}}">
+                            <image src="{{brandarticle.litpic}}" alt="{{brandarticle.brandname}}"></image>
                             <view class="item8listcontent">
-                                <view class="listtitle">辣道酸菜鱼</view>
+                                <view class="listtitle">{{brandarticle.brandname}}</view>
                                 <view class="listtext">
-                                    <text>辣道酸菜鱼</text>
+                                    <text>{{brandarticle.brandgroup}}</text>
                                 </view>
-                                <view class="textleft fl">￥1-5万元
+                                <view class="textleft fl">{{brandarticle.brandpay}}
                                 </view>
                                 <view class="textright fr">
-                                    2018-04-18
+                                    {{brandarticle.created_at}}
                                 </view>
                             </view>
                         </view>
                     </view>
-                    <view class="item8list  fl ">
-                        <view href="/index.php/brand/1711/">
-                            <image src="https://www.51xxsp.com//images/thread/2018/04/17/481dcbb121aa378b84b8c621fa38aa8a.jpg" alt="我家酸菜鱼"></image>
-                            <view class="item8listcontent">
-                                <view class="listtitle">我家酸菜鱼</view>
-                                <view class="listtext">
-                                    <text>广州我家酸菜鱼餐饮管理有限公司</text>
-                                </view>
-                                <view class="textleft fl">￥1-5万元
-                                </view>
-                                <view class="textright fr">
-                                    2018-04-17
-                                </view>
-                            </view>
-                        </view>
-                    </view>
-                    <view class="item8list  fr ">
-                        <view href="/index.php/brand/2733/">
-                            <image src="https://www.51xxsp.com//images/thread/2018/05/16/36d22533dcc69a7484f65cc6e31fe3e2.jpg" alt="尾尾鲜无刺酸菜鱼"></image>
-                            <view class="item8listcontent">
-                                <view class="listtitle">尾尾鲜无刺酸菜鱼</view>
-                                <view class="listtext">
-                                    <text>尾尾鲜无刺酸菜鱼</text>
-                                </view>
-                                <view class="textleft fl">￥15万以上
-                                </view>
-                                <view class="textright fr">
-                                    2018-05-16
-                                </view>
-                            </view>
-                        </view>
-                    </view>
-                    <view class="item8list  fl ">
-                        <view href="/index.php/brand/2393/">
-                            <image src="https://www.51xxsp.com//images/thread/2018/05/08/95274d84dda04b5370ca963997b4ccc9.jpg" alt="渔人杰无刺鱼"></image>
-                            <view class="item8listcontent">
-                                <view class="listtitle">渔人杰无刺鱼</view>
-                                <view class="listtext">
-                                    <text>渔人杰无刺鱼</text>
-                                </view>
-                                <view class="textleft fl">￥12-15万元
-                                </view>
-                                <view class="textright fr">
-                                    2018-05-08
-                                </view>
-                            </view>
-                        </view>
-                    </view>
+                    <view class="clear"></view>
                 </view>
             </view>
         </view>

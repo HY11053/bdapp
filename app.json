@@ -13,33 +13,5 @@
         "navigationBarTitleText": "51加盟网",
         "navigationStyle": "default",
         "backgroundTextStyle": "light"
-    },
-    "tabBar": {
-        "list": [
-            {
-                "pagePath": "pages/index/index",
-                "iconPath": "images/home.png",
-                "selectedIconPath": "images/home-cur.png",
-                "text": "首页"
-            },
-            {
-                "pagePath": "pages/blists/blists",
-                "iconPath": "images/brand.png",
-                "selectedIconPath": "images/brand-cur.png",
-                "text": "品牌"
-            },
-            {
-                "pagePath": "pages/nlists/nlists",
-                "iconPath": "images/paihang1.png",
-                "selectedIconPath": "images/paihang-cur.png",
-                "text": "排行榜"
-            },
-            {
-                "pagePath": "pages/nlists/nlists",
-                "iconPath": "images/zixun.png",
-                "selectedIconPath": "images/zixun-cur.png",
-                "text": "资讯"
-            }
-        ]
     }
 }
