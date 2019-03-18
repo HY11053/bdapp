@@ -5,28 +5,33 @@ Page({
     },
     //内容详情页
     toArticle(event){
-        // console.log(event);
-        //获取点击跳转对应的下标
         let index = event.currentTarget.dataset.index
-        console.log(event)
         swan.navigateTo({
             url: '/pages/article/article?index='+index,
         })
     },
     //品牌详情页
     toBrandArticle(event){
-        // console.log(event);
-        //获取点击跳转对应的下标
         let index = event.currentTarget.dataset.index
-        console.log(event)
         swan.navigateTo({
             url: '/pages/brandarticle/brandarticle?index='+index,
+        })
+    },
+    toIndex(event){
+        swan.navigateTo({
+            url: '/pages/index/index',
+        })
+    },
+    toBrandList(event){
+        let realPath = event.currentTarget.dataset.real_path
+        console.log(event)
+        swan.navigateTo({
+            url: '/pages/blists/blists?real_path='+realPath,
         })
     },
     onLoad: function (options) {
         let index=options.index;
         this.setData({id:options.index})
-
     },
     onReady: function() {
         // 监听页面初次渲染完成的生命周期函数
@@ -91,6 +96,19 @@ Page({
             success: function (res) {
                 that.setData({ brandarticles:res.data });
                 console.log(that.data)
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+        //文档栏目数据请求
+        swan.request({
+            url: app.globalData.baseUrl+"arctype/?bid="+that.data.id, //请求地址
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                that.setData({ thistypeinfos:res.data });
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);

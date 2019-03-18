@@ -1,6 +1,6 @@
 <view class="container">
     <view class="weizhi">
-        <view><text href="/">首页</text>&nbsp;&gt;&nbsp; <text href="https://m.51xxsp.com/index.php/blist/all/">品牌招商</text>&nbsp;&gt;&nbsp;列表：</view>
+        <view><text  catchtap="toIndex">首页</text> > <text catchtap="toBrandList" data-real_path="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>> 品牌列表：</view>
     </view>
 <!--品牌列表-->
     <view class="brand_list">

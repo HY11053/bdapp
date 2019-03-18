@@ -2,16 +2,26 @@
 var app = getApp();
 Page({
     data: {
-
+        page:35
     },
     //品牌详情页
     toBrandArticle(event){
-        // console.log(event);
-        //获取点击跳转对应的下标
         let index = event.currentTarget.dataset.index
         console.log(event)
         swan.navigateTo({
             url: '/pages/brandarticle/brandarticle?index='+index,
+        })
+    },
+    toIndex(event){
+        swan.navigateTo({
+            url: '/pages/index/index',
+        })
+    },
+    toBrandList(event){
+        let realPath = event.currentTarget.dataset.real_path
+        console.log(event)
+        swan.navigateTo({
+            url: '/pages/blists/blists?real_path='+realPath,
         })
     },
     onLoad: function (options) {
@@ -24,10 +34,9 @@ Page({
         // 监听页面初次渲染完成的生命周期函数
     },
     onShow: function() {
-        // 监听页面显示的生命周期函数
         // 监听页面加载的生命周期函数
         var that=this
-        //单页文档接口请求
+        //当前栏目信息请求
         swan.request({
             url: app.globalData.baseUrl+"bnlist/?real_path="+that.data.real_path, //请求地址
             method: 'GET',
@@ -77,6 +86,31 @@ Page({
     },
     onReachBottom: function() {
         // 页面上拉触底事件的处理函数
+        var that = this;
+        // 显示加载图标
+        swan.showLoading({
+            title: '正在加载中',
+        })
+        page = that.page + 15;
+        that.setData({page:that.data.page+15})
+        swan.request({
+            url: app.globalData.baseUrl+"brandarticles/?take=5&orderby=id&typeid="+that.data.thistypeinfos.id+"&skip="+that.data.page,
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                var brands_list = that.data.brands;
+                for (var i = 0; i < res.data.length; i++) {
+                    brands_list.push(res.data[i]);
+                }
+                // 设置数据
+                that.setData({
+                    brands: that.data.brands
+                })
+                // 隐藏加载框
+                swan.hideLoading();
+            }
+        })
+
     },
     onShareAppMessage: function () {
         // 用户点击右上角转发

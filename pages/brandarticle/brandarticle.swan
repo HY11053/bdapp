@@ -1,7 +1,7 @@
 <import src="../../wxParser/index.swan" />
 <view class="container">
     <view class="weizhi">
-        <view><text href="/">首页</text>&nbsp;&gt;&nbsp; <text href="https://m.51xxsp.com/index.php/bviewst/all/">加盟指南</text>&nbsp;&gt;&nbsp;列表：</view>
+        <view><text  catchtap="toIndex">首页</text> > <text catchtap="toBrandList" data-real_path="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>> 品牌详情：</view>
     </view>
     <!--文档详情-->
     <view class="list_middle">

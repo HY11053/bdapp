@@ -63,7 +63,7 @@
 <view class="related-tit tabs-tit">
     <text class="jpxm"></text>
     <view class="btn-one-more fr">
-        <text class="ic-one-more"></text>换一批
+        <text class="ic-one-more" catchtap="chengeBrands"  data-type="click"></text>换一批
     </view>
 </view>
 <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">
@@ -84,7 +84,7 @@
     <view class="related-tit tabs-tit">
         <text class="xptj"></text>
         <view class="btn-one-more fr">
-            <text class="ic-one-more"></text>换一批
+            <text class="ic-one-more" catchtap="chengeBrands"  data-type="id"></text>换一批
         </view>
     </view>
     <view class="tabs-ctn" data-id="m_n_a03" data-type="cmsadpos">

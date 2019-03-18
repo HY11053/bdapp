@@ -10,14 +10,8 @@ Page({
       "https://m.51xxsp.com/51xxsp/images/1331134813.jpg"
     ],
       currentTab:0,
+      page:0,
       basename:app.globalData.baseName
-  },
-
-  //品牌列表
-  blists:function(){
-    swan.navigateTo({
-      url: '/pages/blists/blists'
-    });
   },
     //滑动切换
     swiperTab: function (e) {
@@ -37,8 +31,43 @@ Page({
             })
         }
     },
-    //swiper 高度自适用
-    viewHeight: function (e) {
+    chengeBrands:function(e){
+        var that = this;
+        // 显示加载图标
+        swan.showLoading({
+            title: '正在加载中',
+        })
+        that.setData({page:that.data.page+4})
+        swan.request({
+            url: app.globalData.baseUrl+"brandarticles/?take=4&orderby="+e.target.dataset.type+"&skip="+that.data.page,
+            method: 'GET',
+            dataType: 'json',
+            success: function (res) {
+                var cbrand_list=[] ;
+                for (var i = 0; i < res.data.length; i++) {
+                    cbrand_list.push(res.data[i]);
+                }
+                console.log(cbrand_list)
+                // 设置数据
+                if (e.target.dataset.type==='click'){
+                    that.setData({
+                        cbrands:cbrand_list
+                    })
+                }else {
+                    that.setData({
+                        newbrands:cbrand_list
+                    })
+                }
+                // 隐藏加载框
+                swan.hideLoading();
+            }
+        })
+    },
+    /**
+     *
+     * @param event
+     *   //swiper 高度自适用
+     viewHeight: function (e) {
         //获取图片真实宽度
         var width = e.detail.width;
         var height = e.detail.height;
@@ -51,6 +80,7 @@ Page({
             itemHeight: itemHeight
         })
     },
+     */
     //内容详情页
     toArticle(event){
         // console.log(event);
@@ -63,8 +93,6 @@ Page({
     },
     //品牌详情页
     toBrandArticle(event){
-        // console.log(event);
-        //获取点击跳转对应的下标
         let index = event.currentTarget.dataset.index
         console.log(event)
         swan.navigateTo({
@@ -73,8 +101,6 @@ Page({
     },
     //品牌列表页
     toBrandList(event){
-        console.log(event);
-        //获取点击跳转对应的下标
         let realPath = event.currentTarget.dataset.real_path
         console.log(event)
         swan.navigateTo({
@@ -110,7 +136,7 @@ Page({
                 console.log('错误信息：' + err.errMsg);
             }
         });
-        //精品推荐
+        //新品推荐
         swan.request({
             url: app.globalData.baseUrl+"brandarticles/?take=4&orderby=id", //请求地址
             method: 'GET',
