@@ -31,6 +31,10 @@ Page({
             })
         }
     },
+    searchBtn:function(event)
+    {
+        this.setData({btn:true})
+    },
     chengeBrands:function(e){
         var that = this;
         // 显示加载图标

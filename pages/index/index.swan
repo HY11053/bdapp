@@ -2,8 +2,9 @@
     <form bindsubmit="formSubmitHandle" bindreset="formReset" report-submit>
         <view class="btn-area">
             <view class="search_input">
-                <input name="input"  placeholder="请输入要搜索的项目" />
+                <input bindconfirm="searchBtn" name="input"  placeholder="请输入要搜索的项目" />
             </view>
+            <view s-if="{{btn}}" class="search_btn"><text>搜索</text></view>
         </view>
     </form>
 </view>
