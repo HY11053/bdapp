@@ -2,12 +2,11 @@
 var app = getApp();
 Page({
     data: {
-        page:35
+        page:15
     },
     //品牌详情页
     toBrandArticle(event){
         let index = event.currentTarget.dataset.index
-        console.log(event)
         swan.navigateTo({
             url: '/pages/brandarticle/brandarticle?index='+index,
         })
@@ -42,9 +41,9 @@ Page({
             method: 'GET',
             dataType: 'json',
             success: function (res) {
-                console.log(res.data);
+                //console.log(res.data);
                 that.setData({ thistypeinfos:res.data });
-                console.log(res.data.title)
+                //console.log(res.data.title)
                 swan.setPageInfo && swan.setPageInfo({
                     title:that.data.thistypeinfos.title+app.globalData.baseName,
                     keywords: that.data.thistypeinfos.keywords,
@@ -91,7 +90,6 @@ Page({
         swan.showLoading({
             title: '正在加载中',
         })
-        page = that.page + 15;
         that.setData({page:that.data.page+15})
         swan.request({
             url: app.globalData.baseUrl+"brandarticles/?take=5&orderby=id&typeid="+that.data.thistypeinfos.id+"&skip="+that.data.page,

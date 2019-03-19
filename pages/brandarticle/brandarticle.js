@@ -159,7 +159,6 @@ Page({
         });
     },
     onLoad: function (options) {
-        let index=options.index;
         this.setData({id:options.index})
     },
     onReady: function() {
@@ -175,16 +174,8 @@ Page({
             method: 'GET',
             dataType: 'json',
             success: function (res) {
-                console.log(res.data);
                 that.setData({ thisarticleinfos:res.data });
-                console.log(res.data.body)
-                let ht=res.data.body;
-                wxParser.parse({
-                    bind: 'richText',
-                    html:ht ,
-                    target: that,
-                    enablePreviewImage: true, // 禁用图片预览功能
-                });
+                //console.log(res.data.body)
                 swan.setPageInfo && swan.setPageInfo({
                     title:that.data.thisarticleinfos.title+app.globalData.baseName,
                     keywords: that.data.thisarticleinfos.keywords,
@@ -197,6 +188,13 @@ Page({
                         console.log(that.data.thisarticleinfos.title);
                         console.log('品牌文档页面基础信息设置完成');
                     }
+                });
+                let ht=res.data.body;
+                wxParser.parse({
+                    bind: 'richText',
+                    html:ht ,
+                    target: that,
+                    enablePreviewImage: false, // 禁用图片预览功能
                 });
                 swan.setNavigationBarTitle({
                     title: that.data.thisarticleinfos.brandname+'加盟'
@@ -227,7 +225,7 @@ Page({
             dataType: 'json',
             success: function (res) {
                 that.setData({ brandarticles:res.data });
-                console.log(that.data)
+                //console.log(that.data)
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);

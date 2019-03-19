@@ -42,7 +42,6 @@ Page({
             success: function (res) {
                 console.log(res.data);
                 that.setData({ thistypeinfos:res.data });
-                console.log(res.data.title)
                 swan.setPageInfo && swan.setPageInfo({
                     title:that.data.thistypeinfos.title+app.globalData.baseName,
                     keywords: that.data.thistypeinfos.keywords,
@@ -98,7 +97,6 @@ Page({
             method: 'GET',
             dataType: 'json',
             success: function (res) {
-                console.log(res.data)
                 var articles_list = that.data.articles;
                 for (var i = 0; i < res.data.length; i++) {
                     articles_list.push(res.data[i]);

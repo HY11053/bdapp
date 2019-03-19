@@ -19,7 +19,6 @@ Page({
     //内容详情页
     toArticle(event){
         let index = event.currentTarget.dataset.index
-        console.log(event)
         swan.navigateTo({
             url: '/pages/article/article?index='+index,
         })
@@ -27,18 +26,18 @@ Page({
     //品牌详情页
     toBrandArticle(event){
         let index = event.currentTarget.dataset.index
-        console.log(event)
         swan.navigateTo({
             url: '/pages/brandarticle/brandarticle?index='+index,
         })
     },
+    //文档列表页
     toNlist(event){
         let realPath = event.currentTarget.dataset.real_path
-        console.log(event)
         swan.navigateTo({
             url: '/pages/nlists/nlists?real_path='+realPath,
         })
     },
+    //首页
     toIndex(event){
         swan.navigateTo({
             url: '/pages/index/index',
@@ -178,16 +177,7 @@ Page({
             method: 'GET',
             dataType: 'json',
             success: function (res) {
-                console.log(res.data);
                 that.setData({ thisarticleinfos:res.data });
-                console.log(res.data.body)
-                let ht=res.data.body;
-                wxParser.parse({
-                    bind: 'richText',
-                    html:ht ,
-                    target: that,
-                    enablePreviewImage: true, // 禁用图片预览功能
-                });
                 swan.setPageInfo && swan.setPageInfo({
                     title:that.data.thisarticleinfos.title+app.globalData.baseName,
                     keywords: that.data.thisarticleinfos.keywords,
@@ -200,6 +190,13 @@ Page({
                         console.log(that.data.thisarticleinfos.title);
                         console.log('普通文档页面基础信息设置完成');
                     }
+                });
+                let ht=res.data.body;
+                wxParser.parse({
+                    bind: 'richText',
+                    html:ht ,
+                    target: that,
+                    enablePreviewImage: false, // 禁用图片预览功能
                 });
                 if (that.data.thisarticleinfos.brandname)
                 {
@@ -238,7 +235,7 @@ Page({
             dataType: 'json',
             success: function (res) {
                 that.setData({ brandarticles:res.data });
-                console.log(that.data)
+                //console.log(that.data)
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);

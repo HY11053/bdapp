@@ -105,7 +105,6 @@ Page({
         // console.log(event);
         //获取点击跳转对应的下标
         let index = event.currentTarget.dataset.index
-        console.log(event)
         swan.navigateTo({
             url: '/pages/article/article?index='+index,
         })
@@ -113,7 +112,6 @@ Page({
     //品牌详情页
     toBrandArticle(event){
         let index = event.currentTarget.dataset.index
-        console.log(event)
         swan.navigateTo({
             url: '/pages/brandarticle/brandarticle?index='+index,
         })
@@ -121,7 +119,7 @@ Page({
     //品牌列表页
     toBrandList(event){
         let realPath = event.currentTarget.dataset.real_path
-        console.log(event)
+        //console.log(event)
         swan.navigateTo({
             url: '/pages/blists/blists?real_path='+realPath,
         })
@@ -242,7 +240,7 @@ Page({
             // 单张图时值可以是字符串
             image: this.data.imgs,
             success: function () {
-                console.log('页面基础信息设置完成');
+                console.log('首页基础信息设置完成');
             }
         });
     },
