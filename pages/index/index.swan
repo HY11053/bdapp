@@ -1,18 +1,18 @@
 <view class="search">
-    <form bindsubmit="formSubmitHandle" bindreset="formReset" report-submit>
+    <form bindsubmit="formSubmitHandle" report-submit>
         <view class="btn-area">
             <view class="search_input">
-                <input bindconfirm="searchBtn" name="input"  placeholder="请输入要搜索的项目" />
+                <input bindconfirm="searchBtn" name="search"  value='{=keyword=}'  placeholder="请输入要搜索的项目" />
             </view>
-            <view s-if="{{btn}}" class="search_btn"><text>搜索</text></view>
+            <view s-if="{{btn}}" bindtap='search' class="search_btn"> <button class="form-button" form-type="submit">提交</button></view>
         </view>
     </form>
 </view>
 <view class="lunbo">
 	<swiper indicator-dots="true" autoplay="true" interval="3000" duration="500">
-		<block s-for="imgUrl in imgs">
+		<block s-for="imgdata in imgdatas">
 			<swiper-item>
-				<image src="{{imgUrl}}" class="slide-image" width="355" height="250" />
+				<image src="{{imgdata.imgurl}}" catchtap="toBrandArticle" data-index="{{imgdata.id}}" class="slide-image" width="355" height="250" />
 			</swiper-item>
 		</block>
 	</swiper>
@@ -40,7 +40,7 @@
         <view class="small-box rightbox" catchtap="toBrandList" data-real_path="blist/mianshi">
             <image src="https://m.51xxsp.com/m51xxsp/images/canyin.png"></image><view>面食加盟</view>
         </view>
-        <view class="small-box rightbox" catchtap="toBrandList" data-real_path="shengjian8">
+        <view class="small-box rightbox" catchtap="toBrandList" data-real_path="shengjian">
             <image src="https://m.51xxsp.com/m51xxsp/images/huoguo.png"></image><view>生煎加盟</view>
         </view>
         <view class="small-box rightbox" catchtap="toBrandList" data-real_path="haixuan">
@@ -186,7 +186,7 @@
         <view class="clear"></view>
     </view>
         <view class="lxmore">
-        <text href="/bnlist/">查看更多</text>
+        <text  catchtap="toNlist" data-real_path="bnlist">查看更多</text>
     </view>
 </view>
 

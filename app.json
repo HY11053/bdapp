@@ -5,7 +5,8 @@
         "pages/blists/blists",
         "pages/nlists/nlists",
         "pages/article/article",
-        "pages/brandarticle/brandarticle"
+        "pages/brandarticle/brandarticle",
+        "pages/search/search"
     ],
     "window": {
         "navigationBarBackgroundColor": "#dc0011",

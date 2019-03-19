@@ -2,6 +2,19 @@ var app = getApp();
 let wxParser = require('../../wxParser/index');
 Page({
     data: {
+        showModal: false
+    },
+    telSubmit: function() {
+        this.setData({
+            showModal: true
+        })
+    },
+    preventTouchMove: function() {
+    },
+    closeMod: function() {
+        this.setData({
+            showModal: false
+        })
     },
     //内容详情页
     toArticle(event){
@@ -30,6 +43,122 @@ Page({
         swan.navigateTo({
             url: '/pages/index/index',
         })
+    },
+    formSubmitHandle: function(e) {
+        var  that =this
+        if ( e.detail.value.username== '') {
+            swan.showToast({
+                title:'姓名不能为空',
+                duration: 2000,
+                mask: true,
+                icon: 'none'
+            });
+            return false;
+        }
+        // 判断手机号是否正确
+        if (!(/^1[34578]\d{9}$/.test(e.detail.value.iphone))) {
+            swan.showToast({
+                title:'请输入正确的手机号码',
+                duration: 2000,
+                mask: true,
+                icon: 'none'
+            });
+            return false;
+        }
+        swan.request({
+            url: "https://mip.51xxsp.com/phone/complate/", //请求地址
+            method: 'POST',
+            dataType: 'json',
+            data:{
+                username:e.detail.value.username,
+                iphone:e.detail.value.iphone,
+                content:e.detail.value.content,
+                host:'https://mip.51xxsp.com/index.php/news/'+that.data.thisarticleinfos.id+'/?referer=baidu_applet',
+                realm:'mip.51xxsp.com',
+                job:'guestbook',
+                title:'51加盟网',
+                cla:that.data.thisarticleinfos.brandtypename,
+                combrand:that.data.thisarticleinfos.brandname,
+                resolution:'',
+            },
+            success: function (res) {
+                swan.showToast({
+                    title:'电话提交成功 我们将尽快与你们联系',
+                    duration: 2000,
+                    mask: true,
+                    icon: 'none'
+                });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+    },
+    formSubmitHandle2: function(e) {
+        var  that =this
+        if ( e.detail.value.tusername== '') {
+            swan.showToast({
+                title:'姓名不能为空',
+                duration: 2000,
+                mask: true,
+                icon: 'none'
+            });
+            return false;
+        }
+        // 判断手机号是否正确
+        if (!(/^1[34578]\d{9}$/.test(e.detail.value.tiphone))) {
+            swan.showToast({
+                title:'请输入正确的手机号码',
+                duration: 2000,
+                mask: true,
+                icon: 'none'
+            });
+            return false;
+        }
+        swan.request({
+            url: "https://mip.51xxsp.com/phone/complate/", //请求地址
+            method: 'POST',
+            dataType: 'json',
+            data:{
+                username:e.detail.value.tusername,
+                iphone:e.detail.value.tiphone,
+                content:e.detail.value.tcontent,
+                host:'https://mip.51xxsp.com/index.php/news/'+that.data.thisarticleinfos.id+'/?referer=baidu_applet-mod',
+                realm:'mip.51xxsp.com',
+                job:'guestbook',
+                title:'51加盟网',
+                cla:that.data.thisarticleinfos.brandtypename,
+                combrand:that.data.thisarticleinfos.brandname,
+                resolution:'',
+            },
+            success: function (res) {
+                swan.showToast({
+                    title:'电话提交成功 我们将尽快与你们联系',
+                    duration: 2000,
+                    mask: true,
+                    icon: 'none'
+                });
+            },
+            fail: function (err) {
+                console.log('错误码：' + err.errCode);
+                console.log('错误信息：' + err.errMsg);
+            }
+        });
+    },
+    //拨打电话
+    makePhoneCall(e) {
+        let phoneNumber=e.currentTarget.dataset.phoneNumber
+        swan.makePhoneCall({
+            phoneNumber,
+            fail: err => {
+                swan.showModal({
+                    title: '拨打失败',
+                    content: '请检查是否输入了正确的电话号码',
+                    showCancel: false
+                });
+            }
+        });
     },
     onLoad: function (options) {
         let index=options.index;
@@ -72,6 +201,17 @@ Page({
                         console.log('普通文档页面基础信息设置完成');
                     }
                 });
+                if (that.data.thisarticleinfos.brandname)
+                {
+                    swan.setNavigationBarTitle({
+                        title: that.data.thisarticleinfos.brandname+'加盟'
+                    });
+                } else{
+                    swan.setNavigationBarTitle({
+                        title: '51加盟网内容资讯页'
+                    });
+                }
+
             },
             fail: function (err) {
                 console.log('错误码：' + err.errCode);

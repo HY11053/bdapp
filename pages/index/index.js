@@ -2,12 +2,11 @@
 var app = getApp();
 Page({
   data: {
-    imgs: [
-      "https://m.51xxsp.com/51xxsp/images/133113481.jpg",
-      "https://m.51xxsp.com/51xxsp/images/133113481232.jpg",
-      "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
-      "https://m.51xxsp.com/51xxsp/images/1331134812.jpg",
-      "https://m.51xxsp.com/51xxsp/images/1331134813.jpg"
+    imgdatas: [
+        {id:228,imgurl:"https://m.51xxsp.com/51xxsp/images/133113481.jpg"},
+        {id:419,imgurl:"https://m.51xxsp.com/51xxsp/images/133113481232.jpg"},
+        {id:1228,imgurl:"https://m.51xxsp.com/51xxsp/images/1331134812.jpg"},
+        {id:7694,imgurl:"https://m.51xxsp.com/51xxsp/images/1331134813.jpg"},
     ],
       currentTab:0,
       page:0,
@@ -31,9 +30,25 @@ Page({
             })
         }
     },
-    searchBtn:function(event)
+    //搜索事件触发
+    searchBtn:function()
     {
         this.setData({btn:true})
+    },
+    formSubmitHandle: function(e) {
+        if ( e.detail.value.search== '') {
+            swan.showToast({
+                title:'搜索内容不能为空',
+                duration: 2000,
+                mask: true,
+                icon: 'none'
+            })
+        }else{
+            let search =e.detail.value.search
+            swan.navigateTo({
+                url: '/pages/search/search?keyword='+search,
+            })
+        }
     },
     chengeBrands:function(e){
         var that = this;
@@ -109,6 +124,13 @@ Page({
         console.log(event)
         swan.navigateTo({
             url: '/pages/blists/blists?real_path='+realPath,
+        })
+    },
+    //文档列表页
+    toNlist(event){
+        let realPath = event.currentTarget.dataset.real_path
+        swan.navigateTo({
+            url: '/pages/nlists/nlists?real_path='+realPath,
         })
     },
     onLoad: function () {
