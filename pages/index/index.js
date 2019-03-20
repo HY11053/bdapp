@@ -66,7 +66,7 @@ Page({
                 for (var i = 0; i < res.data.length; i++) {
                     cbrand_list.push(res.data[i]);
                 }
-                console.log(cbrand_list)
+                //console.log(cbrand_list)
                 // 设置数据
                 if (e.target.dataset.type==='click'){
                     that.setData({
@@ -118,22 +118,22 @@ Page({
     },
     //品牌列表页
     toBrandList(event){
-        let realPath = event.currentTarget.dataset.real_path
+        let realPath = event.currentTarget.dataset.realpath
         //console.log(event)
         swan.navigateTo({
             url: '/pages/blists/blists?real_path='+realPath,
         })
     },
-    //品牌列表页
+    //排行榜列表页
     toPaihangbang(event){
-        let realPath = event.currentTarget.dataset.real_path
+        let realPath = event.currentTarget.dataset.realpath
         swan.navigateTo({
             url: '/pages/paihangbang/paihangbang?real_path='+realPath,
         })
     },
     //文档列表页
     toNlist(event){
-        let realPath = event.currentTarget.dataset.real_path
+        let realPath = event.currentTarget.dataset.realpath
         swan.navigateTo({
             url: '/pages/nlists/nlists?real_path='+realPath,
         })

@@ -1,6 +1,6 @@
 <view class="container">
     <view class="weizhi">
-        <view><text  catchtap="toIndex" >首页</text> > <text catchtap="toNlist" data-real_path="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text> 文档列表：</view>
+        <view><text  catchtap="toIndex" >首页</text> > <text catchtap="toNlist" data-realpath="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text> 文档列表：</view>
     </view>
     <!--文档列表-->
     <view class="viewst_middle">

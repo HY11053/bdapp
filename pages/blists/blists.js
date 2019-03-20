@@ -17,7 +17,7 @@ Page({
         })
     },
     toBrandList(event){
-        let realPath = event.currentTarget.dataset.real_path
+        let realPath = event.currentTarget.dataset.realpath
         console.log(event)
         swan.navigateTo({
             url: '/pages/blists/blists?real_path='+realPath,

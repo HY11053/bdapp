@@ -2,7 +2,7 @@
 <import src="../../templets/liuyan.swan" />
 <view class="container">
     <view class="weizhi">
-        <view><text  catchtap="toIndex">首页</text> > <text catchtap="toBrandList" data-real_path="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>> 品牌详情：</view>
+        <view><text  catchtap="toIndex">首页</text> > <text catchtap="toBrandList" data-realpath="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>> 品牌详情：</view>
     </view>
     <!--文档详情-->
     <view class="list_middle">

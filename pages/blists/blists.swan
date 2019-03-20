@@ -1,6 +1,6 @@
 <view class="container">
     <view class="weizhi">
-        <view><text  catchtap="toIndex">首页</text> > <text catchtap="toBrandList" data-real_path="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>> 品牌列表：</view>
+        <view><text  catchtap="toIndex">首页</text> > <text catchtap="toBrandList" data-realpath="{{thistypeinfos.real_path}}">{{thistypeinfos.typename}}</text>> 品牌列表：</view>
     </view>
 <!--品牌列表-->
     <view class="brand_list">

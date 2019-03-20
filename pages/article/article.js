@@ -32,7 +32,7 @@ Page({
     },
     //文档列表页
     toNlist(event){
-        let realPath = event.currentTarget.dataset.real_path
+        let realPath = event.currentTarget.dataset.realpath
         swan.navigateTo({
             url: '/pages/nlists/nlists?real_path='+realPath,
         })
