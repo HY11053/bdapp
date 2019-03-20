@@ -6,7 +6,8 @@
         "pages/nlists/nlists",
         "pages/article/article",
         "pages/brandarticle/brandarticle",
-        "pages/search/search"
+        "pages/search/search",
+        "pages/paihangbang/paihangbang"
     ],
     "window": {
         "navigationBarBackgroundColor": "#dc0011",

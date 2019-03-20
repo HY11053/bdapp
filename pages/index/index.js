@@ -124,6 +124,13 @@ Page({
             url: '/pages/blists/blists?real_path='+realPath,
         })
     },
+    //品牌列表页
+    toPaihangbang(event){
+        let realPath = event.currentTarget.dataset.real_path
+        swan.navigateTo({
+            url: '/pages/paihangbang/paihangbang?real_path='+realPath,
+        })
+    },
     //文档列表页
     toNlist(event){
         let realPath = event.currentTarget.dataset.real_path
@@ -233,12 +240,9 @@ Page({
         // 监听页面显示的生命周期函数
         swan.setPageInfo && swan.setPageInfo({
             title: '51加盟网-零食、餐饮加盟招商一站式连锁加盟创业综合服务平台',
-            keywords: '51加盟网-零食、餐饮加盟招商一站式连锁加盟创业综合服务平台',
+            keywords: '餐饮加盟,零食店加盟,餐饮招商加盟,休闲食品加盟,餐饮加盟品牌,餐饮品牌,零食加盟品牌,休闲食品品牌排行榜',
             description: '51加盟网致力打造国内安全可靠的零食、餐饮、酒水饮料、酒店等行业加盟创业商机平台，为投资者甄选优质加盟创业项目，实时提供零食、餐饮、酒水饮料、酒店、教育等招商加盟创业信息，让投资者快速找到适合自己的创业加盟品牌，轻松开店创业',
-            articleTitle: '餐饮加盟,零食店加盟,餐饮招商加盟,休闲食品加盟,餐饮加盟品牌,餐饮品牌,零食加盟品牌,休闲食品品牌排行榜',
-            releaseDate: '2019-01-02 12:01:30',
-            // 单张图时值可以是字符串
-            image: this.data.imgs,
+            articleTitle: '51加盟网-零食、餐饮加盟招商一站式连锁加盟创业综合服务平台',
             success: function () {
                 console.log('首页基础信息设置完成');
             }
