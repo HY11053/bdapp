@@ -40,7 +40,7 @@ Page({
             method: 'GET',
             dataType: 'json',
             success: function (res) {
-                console.log(res.data);
+                //console.log(res.data);
                 that.setData({ thistypeinfos:res.data });
                 swan.setPageInfo && swan.setPageInfo({
                     title:that.data.thistypeinfos.title+app.globalData.baseName,
