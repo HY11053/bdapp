@@ -15,5 +15,16 @@
         "navigationBarTitleText": "佐赛招商服务平台",
         "navigationStyle": "default",
         "backgroundTextStyle": "light"
+    },
+    "url-mapping": {
+        "pages/index/index": "/",
+        "pages/blists/blists": "/index.php/${realpath}/",
+        "pages/nlists/nlists": "/index.php/${realpath}/",
+        "pages/article/article": "/index.php/news/${id}/",
+        "pages/brandarticle/brandarticle": "/index.php/brand/${id}/",
+        "pages/paihangbang/paihangbang": [
+            "/index.php/paihangbang/",
+            "/index.php/paihangbang/${realpath}/"
+        ]
     }
 }
