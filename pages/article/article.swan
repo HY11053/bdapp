@@ -12,7 +12,7 @@
                 <text class="small">时间：{{thisarticleinfos.created_at}}&nbsp;&nbsp;&nbsp;&nbsp;浏览量:{{thisarticleinfos.click}}</text>
             </view>
         </view>
-        <view class="brandinfo">
+        <view s-if="{{thisarticleinfos.brandid}}" class="brandinfo">
             <view id="item1">
                 <view class="item1box">
                     <view class="item1boxleft fl">
@@ -84,7 +84,7 @@
         <view class="liuyan">
             <template is="liuyan"  data="{{{showModal:showModal}}}" />
         </view>
-       <view id="item7">
+       <view id="item7" >
             <view class="item7box clearfix">
                 <view class="article-icon"></view>
                 <view class="title">项目资讯</view>

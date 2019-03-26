@@ -16,15 +16,15 @@
         "navigationStyle": "default",
         "backgroundTextStyle": "light"
     },
-    "url-mapping": {
+    "url-mapping":{
         "pages/index/index": "/",
-        "pages/blists/blists": "/index.php/${realpath}/",
-        "pages/nlists/nlists": "/index.php/${realpath}/",
-        "pages/article/article": "/index.php/news/${id}/",
-        "pages/brandarticle/brandarticle": "/index.php/brand/${id}/",
+        "pages/blists/blists": "/index.php/${real_path}/",
+        "pages/nlists/nlists": "/index.php/${real_path}/",
+        "pages/article/article": "/index.php/news/${index}/",
+        "pages/brandarticle/brandarticle": "/index.php/brand/${index}/",
         "pages/paihangbang/paihangbang": [
             "/index.php/paihangbang/",
-            "/index.php/paihangbang/${realpath}/"
+            "/index.php/paihangbang/${real_path}/"
         ]
     }
 }

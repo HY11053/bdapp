@@ -193,9 +193,7 @@ overflow: hidden;
     float: left;
     text-align: center;
 }
-.favor-header-bar ul li.on {
-    color: #dc0011;
-}
+
 .news-content{    display: none;    padding: 3rpx;    margin-bottom: 2rpx;    overflow: hidden;}
 .tabs-ctn .content:nth-of-type(1),.news-content:nth-of-type(1){    display: block;}
 .newslist1 {
