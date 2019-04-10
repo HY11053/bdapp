@@ -63,7 +63,7 @@
                         <view class="bottomleft fl">
                         </view>
                         <view class="bottomright fr">
-                            <view data-phoneNumber="400-8896-216">
+                            <view catchtap="makePhoneCall" data-phoneNumber="400-8896-216">
                                 <view class="item3boxbtn btn2">
                                     拨打电话
                                 </view>
